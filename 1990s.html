@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horror in the 1990s - Horror Cinema Museum</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional styles specific to decade pages */
+    .decade-hero {
+      width: 100%;
+      height: 400px;
+      /* Image from modalContent in script.js */
+      background-image: url('imagenes/modal/1990.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .decade-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .decade-title-main {
+      color: #fff;
+      font-size: 4rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .decade-content-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .decade-detail-content h1 {
+      font-size: 2.2rem;
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #9a0000;
+      padding-bottom: 10px;
+    }
+
+    .decade-detail-content h2 {
+      font-size: 1.8rem;
+      color: #555;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    .decade-detail-content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .back-button {
+      display: inline-block;
+      background-color: #9a0000;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #700000;
+    }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-bar-content">
+    <a href="about.html">About</a>
+    <a href="#donate">Donate</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<a href="index.html">
+  <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
+</a>
+
+<div class="decade-hero">
+  <h1 class="decade-title-main">Horror in the 1990s</h1>
+</div>
+
+<div class="decade-content-wrapper">
+  <a href="index.html" class="back-button">← Back to Home</a>
+
+  <div class="decade-detail-content">
+    <h1>1990s: Meta & Psychological Horror</h1>
+    <p>The 1990s shifted horror away from traditional slashers, embracing self-awareness, psychological depth, and supernatural elements. Found footage emerged, and gothic horror explored deeper themes.</p>
+    <h2>The Silence of the Lambs (1991)</h2>
+    <p>A psychological horror-thriller featuring Hannibal Lecter, a brilliant yet terrifying cannibal psychiatrist, and FBI agent Clarice Starling. The film won five Academy Awards, an exceptional feat for horror.</p>
+    <img src='imagenes/modal/peliculas/silenceofthelambs1991.jpg' class='modalImageP' alt='The Silence of the Lambs 1991'>
+    <h2>Interview with the Vampire (1994)</h2>
+    <p>A gothic horror film that delves into immortality, loneliness, and morality through the complex relationship between vampires Lestat and Louis. Their existential struggles and shifting dynamic add depth to this visually rich and melancholic tale of eternal life.</p>
+    <img src='imagenes/modal/peliculas/interviewwiththevampire1994.jpg' class='modalImageP' alt='Interview with the Vampire 1994'>
+    <h2>Scream (1996)</h2>
+    <p>Wes Craven revitalized the slasher genre with this self-aware horror film, where characters recognized and subverted classic horror tropes while being hunted by the cunning and brutal Ghostface, blending satire, suspense, and genuine scares.</p>
+    <img src='imagenes/modal/peliculas/scream1996.png' class='modalImageP' alt='Scream 1996'>
+    <h2>The Blair Witch Project (1999)</h2>
+    <p>A found-footage horror phenomenon that followed three filmmakers lost in the woods, using shaky camerawork, improvisation, and psychological tension to create an unsettling sense of realism, leaving much of the terror to the audience’s imagination.</p>
+    <img src='imagenes/modal/peliculas/blairwitch1999.png' class='modalImageP' alt='The Blair Witch Project 1999'>
+  </div>
+</div>
+
+<div id="footer" class="footer">
+  <div class="footer-content">
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>ID</th>
+        <th>Carrera</th>
+        <th>Correo</th>
+      </tr>
+      <tr>
+        <td>Maria Jose Arévalo</td>
+        <td>1094044725</td>
+        <td>Jurisprudencia</td>
+        <td>mariaj.arevalo@urosario.edu.co</td>
+      </tr>
+      <tr>
+        <td>Daniela Cortes Rodriguez</td>
+        <td>1095550727</td>
+        <td>Jurisprudencia</td>
+        <td>daniela.cortesro@urosario.edu.co</td>
+      </tr>
+    </table>
+    <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
