@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychological Horror - Horror Cinema Museum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to genre pages */
+        .genre-hero {
+            width: 100%;
+            height: 400px;
+            background-image: url('imagenes/grid/psychological.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .genre-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .genre-title {
+            color: #fff;
+            font-size: 4rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .genre-content {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .genre-section {
+            margin-bottom: 60px;
+        }
+
+        .genre-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #9a0000;
+            padding-bottom: 10px;
+        }
+
+        .genre-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .movie-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .movie-card {
+            border: 1px solid #333;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 15px;
+            background-color: #1a1a1a;
+        }
+
+        .movie-info h3 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .movie-info p {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #9a0000;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #700000;
+        }
+    </style>
+</head>
+<body>
+<!-- Barra Superior -->
+<div class="top-bar">
+    <div class="top-bar-content">
+        <a href="about.html">About</a>
+        <a href="#donate">Donate</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- Logo -->
+<a href="index.html">
+    <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
+</a>
+
+<!-- Hero Section -->
+<div class="genre-hero">
+    <h1 class="genre-title">Psychological Horror</h1>
+</div>
+
+<div class="genre-content">
+    <a href="index.html" class="back-button">← Back to Home</a>
+
+    <div class="genre-section">
+        <h2>What is Psychological Horror?</h2>
+        <p>Psychological horror is a subgenre that focuses on mental, emotional, and psychological states to generate fear, discomfort, and dread. Unlike horror films that rely primarily on monsters or supernatural elements, psychological horror exploits the vulnerabilities of the human mind—fear, paranoia, insanity, grief, existential dread, and identity crisis.</p>
+
+        <p>This genre is known for its emphasis on atmosphere, tension, and characters' deteriorating mental states. It often blurs the line between reality and delusion, making viewers question what is actually happening. Psychological horror films typically feature:</p>
+
+        <ul>
+            <li>Unreliable narrators or perspectives</li>
+            <li>Ambiguous storytelling that leaves room for interpretation</li>
+            <li>Character-driven plots focusing on mental breakdown</li>
+            <li>Subtle, building tension rather than jump scares</li>
+            <li>Themes of paranoia, isolation, and loss of identity</li>
+            <li>Visual and narrative techniques that disorient viewers</li>
+        </ul>
+    </div>
+
+    <div class="genre-section">
+        <h2>Evolution Through the Decades</h2>
+        <p><strong>1940s-1950s:</strong> The early foundations of psychological horror can be found in film noir and suspense thrillers, with directors like Alfred Hitchcock pioneering techniques that would later define the genre. Films like "Psycho" (1960) marked a turning point by focusing on the horror stemming from disturbed human psychology rather than external monsters.</p>
+
+        <p><strong>1960s-1970s:</strong> Roman Polanski's "Repulsion" (1965) and "Rosemary's Baby" (1968) brought psychological horror to new heights, exploring female paranoia and isolation. Meanwhile, "The Exorcist" (1973) blended supernatural elements with deep psychological terror, examining faith, doubt, and mental breakdown in the face of unexplainable phenomena.</p>
+
+        <p><strong>1980s:</strong> Stanley Kubrick's "The Shining" (1980) became a landmark psychological horror film, depicting a man's descent into madness within the isolated Overlook Hotel. The film's ambiguous nature allowed for multiple interpretations of what was supernatural versus psychological.</p>
+
+        <p><strong>1990s:</strong> "The Silence of the Lambs" (1991) merged psychological horror with the thriller genre, creating a new standard for intelligent, character-driven horror. "Jacob's Ladder" (1990) explored PTSD and hallucination, while "Se7en" (1995) delved into the disturbing psychology of both killers and those hunting them.</p>
+
+        <p><strong>2000s-2010s:</strong> Films like "Black Swan" (2010), "The Babadook" (2014), and "Hereditary" (2018) used psychological horror to explore grief, motherhood, and mental illness. Directors like Ari Aster and Robert Eggers created a new wave of "elevated horror" that merged art-house sensibilities with psychological depth.</p>
+
+        <p><strong>2020s:</strong> Recent psychological horror continues to push boundaries with films like "The Invisible Man" (2020), which uses gaslighting and abuse as central themes, and "Smile" (2022), which explores trauma as a contagious force. Psychological horror has become increasingly sophisticated in its exploration of contemporary anxieties and mental health issues.</p>
+    </div>
+
+    <div class="genre-section">
+        <h2>Iconic Psychological Horror Films</h2>
+        <div class="movie-examples">
+            <div class="movie-card">
+                <img src="imagenes/modal/peliculas/theshining1980.jpg" alt="The Shining" class="movie-image">
+                <div class="movie-info">
+                    <h3>The Shining (1980)</h3>
+                    <p>Director: Stanley Kubrick</p>
+                    <p>A masterpiece of psychological horror that follows a writer's descent into madness while isolated in a haunted hotel during winter.</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="imagenes/modal/peliculas/silenceofthelambs1991.jpg" alt="The Silence of the Lambs" class="movie-image">
+                <div class="movie-info">
+                    <h3>The Silence of the Lambs (1991)</h3>
+                    <p>Director: Jonathan Demme</p>
+                    <p>An FBI trainee must consult with an imprisoned cannibal psychiatrist to help catch another serial killer, delving into the darkest aspects of human psychology.</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="imagenes/modal/peliculas/hereditary2018.jpg" alt="Hereditary" class="movie-image">
+                <div class="movie-info">
+                    <h3>Hereditary (2018)</h3>
+                    <p>Director: Ari Aster</p>
+                    <p>A family unravels following the death of their secretive grandmother, exploring themes of grief, fate, and generational trauma.</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="imagenes/modal/peliculas/theinvisibleman2020.jpg" alt="The Invisible Man" class="movie-image">
+                <div class="movie-info">
+                    <h3>The Invisible Man (2020)</h3>
+                    <p>Director: Leigh Whannell</p>
+                    <p>A modern psychological thriller about a woman convinced her abusive ex-boyfriend is stalking her while invisible, exploring themes of gaslighting and domestic abuse.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="genre-section">
+        <h2>Psychological Horror's Impact</h2>
+        <p>Psychological horror has profoundly influenced cinema by elevating the horror genre beyond simple scares to explore complex human emotions and social issues. Unlike traditional horror that relies on external threats, psychological horror turns the lens inward, examining the darkness within human consciousness and society.</p>
+
+        <p>The genre has become particularly relevant in contemporary filmmaking as audiences seek more sophisticated narratives that reflect real-world anxieties. Psychological horror films often serve as allegories for societal issues like mental illness stigma, trauma, toxic relationships, and systemic pressures.</p>
+
+        <p>Directors working in psychological horror frequently employ innovative visual and narrative techniques that have influenced broader filmmaking. The genre's emphasis on ambiguity, unreliable narration, and subjective experience has expanded the language of cinema beyond horror into other genres. As our understanding of psychology evolves, so too does this endlessly adaptable and relevant genre.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer" class="footer">
+    <div class="footer-content">
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>ID</th>
+                <th>Carrera</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Maria Jose Arévalo</td>
+                <td>1094044725</td>
+                <td>Jurisprudencia</td>
+                <td>mariaj.arevalo@urosario.edu.co</td>
+            </tr>
+            <tr>
+                <td>Daniela Cortes Rodriguez</td>
+                <td>1095550727</td>
+                <td>Jurisprudencia</td>
+                <td>daniela.cortesro@urosario.edu.co</td>
+            </tr>
+        </table>
+        <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

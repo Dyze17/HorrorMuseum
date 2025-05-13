@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gothic Horror - Horror Cinema Museum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to genre pages */
+        .genre-hero {
+            width: 100%;
+            height: 400px;
+            background-image: url('imagenes/grid/gothic.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .genre-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .genre-title {
+            color: #fff;
+            font-size: 4rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .genre-content {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .genre-section {
+            margin-bottom: 60px;
+        }
+
+        .genre-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #9a0000;
+            padding-bottom: 10px;
+        }
+
+        .genre-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .movie-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .movie-card {
+            border: 1px solid #333;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 15px;
+            background-color: #1a1a1a;
+        }
+
+        .movie-info h3 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .movie-info p {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #9a0000;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #700000;
+        }
+    </style>
+</head>
+<body>
+<!-- Barra Superior -->
+<div class="top-bar">
+    <div class="top-bar-content">
+        <a href="about.html">About</a>
+        <a href="#donate">Donate</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- Logo -->
+<a href="index.html">
+    <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
+</a>
+
+<!-- Hero Section -->
+<div class="genre-hero">
+    <h1 class="genre-title">Gothic Horror</h1>
+</div>
+
+<div class="genre-content">
+    <a href="index.html" class="back-button">← Back to Home</a>
+
+    <div class="genre-section">
+        <h2>What is Gothic Horror?</h2>
+        <p>Gothic horror emerged in the late 18th century as a literary genre that combined elements of horror and romance. It is characterized by its dark, mysterious, and supernatural elements, often set in gloomy, decaying locations like castles, mansions, and ruins. The genre explores themes of death, decay, madness, secrets, and forbidden desires, creating an atmosphere of dread and suspense.</p>
+
+        <p>In cinema, Gothic horror began with the Universal monster movies of the 1930s, such as "Dracula" and "Frankenstein," which established many of the visual and thematic elements that would define the genre. Gothic horror films often feature:</p>
+
+        <ul>
+            <li>Atmospheric and moody cinematography with heavy shadows</li>
+            <li>Crumbling castles, ancient mansions, and decaying estates</li>
+            <li>Supernatural or monstrous antagonists</li>
+            <li>Themes of aristocracy, legacy, and family curses</li>
+            <li>Psychological torment and forbidden love</li>
+            <li>Religious symbolism and moral conflicts</li>
+        </ul>
+    </div>
+
+    <div class="genre-section">
+        <h2>Evolution Through the Decades</h2>
+        <p><strong>1930s-1940s:</strong> The foundation of Gothic horror in cinema was established by Universal Studios with their classic monster films. Bela Lugosi's portrayal of Count Dracula and Boris Karloff as Frankenstein's monster defined the visual language of the genre. These films embraced German Expressionist techniques with dramatic lighting, shadows, and theatrical performances.</p>
+
+        <p><strong>1950s-1960s:</strong> Hammer Film Productions revitalized Gothic horror with vibrant color films starring Christopher Lee and Peter Cushing. These British productions embraced a more explicit approach with vivid blood, heightened sexuality, and dramatic performances. Films like "Horror of Dracula" (1958) and "The Curse of Frankenstein" (1957) brought a new intensity to the genre.</p>
+
+        <p><strong>1970s-1980s:</strong> Directors like Roger Corman adapted Edgar Allan Poe's stories with psychological depth and visual style. Meanwhile, films like "The Innocents" (1961) and "The Haunting" (1963) emphasized psychological horror over explicit violence. This period also saw Italian Gothic horror from directors like Mario Bava, who combined atmospheric style with more graphic content.</p>
+
+        <p><strong>1990s-2000s:</strong> Gothic horror continued with films like Francis Ford Coppola's "Bram Stoker's Dracula" (1992) and Kenneth Branagh's "Mary Shelley's Frankenstein" (1994), which emphasized literary fidelity and romantic themes. Tim Burton's stylized gothic aesthetic in films like "Sleepy Hollow" (1999) brought a modern sensibility to classic gothic elements.</p>
+
+        <p><strong>2010s-Present:</strong> Modern Gothic horror has embraced psychological complexity and social commentary. Films like Guillermo del Toro's "Crimson Peak" (2015) and Robert Eggers' "The Lighthouse" (2019) honor traditional Gothic elements while exploring deeper themes and innovative visual styles. Gothic horror has also expanded into television with series like "Penny Dreadful" and "The Haunting of Hill House."</p>
+    </div>
+
+    <div class="genre-section">
+        <h2>Iconic Gothic Horror Films</h2>
+        <div class="movie-examples">
+            <div class="movie-card">
+                <img src="imagenes/modal/peliculas/dracula1931.png" alt="Dracula" class="movie-image">
+                <div class="movie-info">
+                    <h3>Dracula (1931)</h3>
+                    <p>Director: Tod Browning</p>
+                    <p>The definitive vampire film that established Bela Lugosi as Count Dracula and set the standard for Gothic atmosphere in horror cinema.</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="imagenes/modal/peliculas/frankenstein1931.jpg" alt="Frankenstein" class="movie-image">
+                <div class="movie-info">
+                    <h3>Frankenstein (1931)</h3>
+                    <p>Director: James Whale</p>
+                    <p>Boris Karloff's portrayal of the Monster in this adaptation of Mary Shelley's novel redefined the character and established Gothic horror's visual language.</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="imagenes/grid/gothic.jpg" alt="Crimson Peak" class="movie-image">
+                <div class="movie-info">
+                    <h3>Crimson Peak (2015)</h3>
+                    <p>Director: Guillermo del Toro</p>
+                    <p>A modern homage to Gothic romance and horror, featuring a decaying mansion, family secrets, ghosts, and forbidden love.</p>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="imagenes/modal/peliculas/interviewwiththevampire1994.jpg" alt="Interview with the Vampire" class="movie-image">
+                <div class="movie-info">
+                    <h3>Interview with the Vampire (1994)</h3>
+                    <p>Director: Neil Jordan</p>
+                    <p>An elegant and melancholic Gothic tale exploring vampirism, immortality, and the moral consequences of eternal life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="genre-section">
+        <h2>Gothic Horror's Influence</h2>
+        <p>Gothic horror has significantly influenced modern horror cinema and broader popular culture. Its visual aesthetics—dramatic lighting, ornate architecture, supernatural elements—continue to inform horror films across subgenres. Gothic themes of hidden secrets, forbidden desires, and haunted pasts remain powerful narrative devices in contemporary horror.</p>
+
+        <p>The genre has also expanded beyond traditional horror to influence dark fantasy, paranormal romance, and even superhero films. Characters like Dracula, Frankenstein's monster, and the ghost have become cultural icons recognized worldwide. Gothic horror's exploration of human fears, desires, and anxieties ensures its continued relevance in an ever-changing world.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer" class="footer">
+    <div class="footer-content">
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>ID</th>
+                <th>Carrera</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Maria Jose Arévalo</td>
+                <td>1094044725</td>
+                <td>Jurisprudencia</td>
+                <td>mariaj.arevalo@urosario.edu.co</td>
+            </tr>
+            <tr>
+                <td>Daniela Cortes Rodriguez</td>
+                <td>1095550727</td>
+                <td>Jurisprudencia</td>
+                <td>daniela.cortesro@urosario.edu.co</td>
+            </tr>
+        </table>
+        <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Cinema Museum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Barra Superior -->
+<div class="top-bar">
+    <div class="top-bar-content">
+        <a href="about.html">About</a>
+        <a href="#donate">Donate</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- Logo -->
+<img src="imagenes/logomuseo.png" alt="Logo" class="logo">
+
+<!-- Descripcion -->
+<div class="description">
+    <p>Welcome to the Horror Cinema Museum, a journey through the dark and fascinating history of horror films over the decades. From the silent terrors of the 1930s through the supernatural terror and psychological horror of today, we explore how horror has captured audiences, reflected the anxieties of society, and pushed the boundaries of filmmaking.</p>
+    <p>Enter the eerie domains of mythic monsters, haunted houses, and psychological horror that have defined every era. Discover how the pioneering black-and-white horror movies paved the way for frightful slashers, brain-shattering psychological horror, and modern supernatural fiction that continue to hold audiences in thrall.</p>
+    <p>Regardless of whether you are a fan of gothic horror, cosmic terror, or found-footage terror, our museum pays tribute to the creativity, innovation, and lasting impact of horror movies on popular mainstream culture. Be afraid and learn about the history of horror—if you dare!</p>
+</div>
+
+<!-- Slider -->
+<div class="slider">
+    <div class="item">
+        <h1>1930s – The Origin of Horror</h1>
+        <p>The birth of horror cinema, with iconic monsters like Dracula and Frankenstein defining gothic horror and establishing the genre’s foundations.</p>
+    </div>
+    <div class="item">
+        <h1>1950s – The Era of Sci-Fi Horror and Paranoia</h1>
+        <p>Cold War fears inspired horror with alien invasions, nuclear mutations, and body-snatcher stories reflecting societal anxieties.</p>
+    </div>
+    <div class="item">
+        <h1>1970s – The Revolution of Horror</h1>
+        <p>A darker and more psychological era, introducing supernatural horror (The Exorcist), gritty realism (The Texas Chain Saw Massacre), and the rise of the slasher genre (Halloween).</p>
+    </div>
+    <div class="item">
+        <h1>1980s – The Slasher Boom and Practical Effects</h1>
+        <p>The golden age of slashers (Friday the 13th, A Nightmare on Elm Street) and groundbreaking practical effects that defined horror’s visual style.</p>
+    </div>
+    <div class="item">
+        <h1>1990s – The Meta and Psychological Horror Era</h1>
+        <p>A shift towards self-aware horror (Scream), psychological thrillers (The Silence of the Lambs), and the rise of found-footage horror (The Blair Witch Project).</p>
+    </div>
+    <div class="item">
+        <h1>2000s – The Rise of Remakes and Torture Horror</h1>
+        <p>A decade dominated by horror remakes (The Ring) and extreme horror (Saw, Hostel), pushing boundaries in graphic violence and tension.</p>
+    </div>
+    <div class="item">
+        <h1>2010s – The Horror Renaissance</h1>
+        <p>A resurgence of elevated horror, blending deep themes with psychological terror (Get Out, Hereditary), and the rise of indie horror.</p>
+    </div>
+    <div class="item">
+        <h1>2020s – The Evolution of Horror</h1>
+        <p>A mix of psychological, supernatural, and socially relevant horror (Nop, The Invisible Man), with streaming platforms driving innovation and diversity.</p>
+    </div>
+    <button id="next">></button>
+    <button id="prev"><</button>
+</div>
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <div id="modalBody"></div> <!-- Contenedor para el contenido HTML -->
+    </div>
+</div>
+
+
+
+<!-- Grid -->
+<div class="header-container">
+    <h2 class="genres-title">Genres</h2>
+    <h2 class="timestamps-title">Timestamps</h2>
+</div>
+<div class="main-container">
+    <div class="grid-container">
+        <a class="grid-item" href=gothic.html>
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="imagenes/grid/gothic.jpg" alt="Descripción 1">
+                </div>
+                <div class="text-overlay">Gothic Horror</div>
+            </div>
+        </a>
+        <a class="grid-item" href="psychological.html">
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="imagenes/grid/psychological.png" alt="Descripción 2">
+                </div>
+                <div class="text-overlay">Psychological Horror</div>
+            </div>
+        </a>
+        <a class="grid-item" href="#genero3">
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="imagenes/grid/slasher.jpg" alt="Descripción 3">
+                </div>
+                <div class="text-overlay">Slasher</div>
+            </div>
+        </a>
+        <a class="grid-item" href="#genero4">
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="imagenes/grid/scifi.jpg" alt="Descripción 4">
+                </div>
+                <div class="text-overlay">Sci-Fi Horror</div>
+            </div>
+        </a>
+        <a class="grid-item" href="#genero5">
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="imagenes/grid/foundfootage.jpg" alt="Descripción 5">
+                </div>
+                <div class="text-overlay">Found Footage</div>
+            </div>
+        </a>
+        <a class="grid-item" href="#genero6">
+            <div class="grid-item">
+                <div class="image-container">
+                    <img src="imagenes/grid/folk.jpg" alt="Descripción 6">
+                </div>
+                <div class="text-overlay">Folk Horror</div>
+            </div>
+        </a>
+    </div>
+    <div class="sidebar-container">
+        <a class="sidebar-item" href="#timestamp1">
+            <img src="imagenes/timestamps/1930.jpg" alt="Descripción 1" class="sidebar-image">
+            <div class="sidebar-text">1930's</div>
+        </a>
+        <a class="sidebar-item" href="#timestamp2">
+            <img src="imagenes/timestamps/1950.jpg" alt="Descripción 2" class="sidebar-image">
+            <div class="sidebar-text">1950's</div>
+        </a>
+        <a class="sidebar-item" href="#timestamp3">
+            <img src="imagenes/timestamps/1970.jpg" alt="Descripción 3" class="sidebar-image">
+            <div class="sidebar-text">1970's</div>
+        </a>
+        <a class="sidebar-item" href="#timestamp4">
+            <img src="imagenes/timestamps/1980.jpg" alt="Descripción 4" class="sidebar-image">
+            <div class="sidebar-text">1980's</div>
+        </a>
+        <a class="sidebar-item" href="#timestamp5">
+            <img src="imagenes/timestamps/1990.jpg" alt="Descripción 5" class="sidebar-image">
+            <div class="sidebar-text">1990's</div>
+        </a>
+        <a class="sidebar-item" href="#timestamp6">
+            <img src="imagenes/timestamps/2000.jpg" alt="Descripción 6" class="sidebar-image">
+            <div class="sidebar-text">2000's</div>
+        </a>
+        <a class="sidebar-item" href="#timestamp7">
+            <img src="imagenes/timestamps/2010.jpg" alt="Descripción 7" class="sidebar-image">
+            <div class="sidebar-text">2010's</div>
+        </a>
+        <a class="sidebar-item" href="#timestamp8">
+            <img src="imagenes/timestamps/2020.jpg" alt="Descripción 8" class="sidebar-image">
+            <div class="sidebar-text">2020's</div>
+        </a>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer" class="footer">
+    <div class="footer-content">
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>ID</th>
+                <th>Carrera</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Maria Jose Arévalo</td>
+                <td>1094044725</td>
+                <td>Jurisprudencia</td>
+                <td>mariaj.arevalo@urosario.edu.co</td>
+            </tr>
+            <tr>
+                <td>Daniela Cortes Rodriguez</td>
+                <td>1095550727</td>
+                <td>Jurisprudencia</td>
+                <td>daniela.cortesro@urosario.edu.co</td>
+            </tr>
+        </table>
+        <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
