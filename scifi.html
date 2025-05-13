@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sci-Fi Horror - Horror Cinema Museum</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional styles specific to genre pages */
+    .genre-hero {
+      width: 100%;
+      height: 400px;
+      background-image: url('imagenes/grid/scifi.jpg'); /* Update with actual image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .genre-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .genre-title {
+      color: #fff;
+      font-size: 4rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .genre-content {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .genre-section {
+      margin-bottom: 60px;
+    }
+
+    .genre-section h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #9a0000;
+      padding-bottom: 10px;
+    }
+
+    .genre-section p, .genre-section ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .movie-examples {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .movie-card {
+      border: 1px solid #333;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .movie-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .movie-info {
+      padding: 15px;
+      background-color: #1a1a1a;
+    }
+
+    .movie-info h3 {
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    .movie-info p {
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+
+    .back-button {
+      display: inline-block;
+      background-color: #9a0000;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #700000;
+    }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-bar-content">
+    <a href="about.html">About</a>
+    <a href="#donate">Donate</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<a href="index.html">
+  <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
+</a>
+
+<div class="genre-hero">
+  <h1 class="genre-title">Sci-Fi Horror</h1>
+</div>
+
+<div class="genre-content">
+  <a href="index.html" class="back-button">← Back to Home</a>
+
+  <div class="genre-section">
+    <h2>What is Sci-Fi Horror?</h2>
+    <p>Sci-Fi Horror is a hybrid genre that combines elements of science fiction with those of horror. It often explores anxieties stemming from scientific advancements, technological hubris, extraterrestrial life, dystopian futures, and the unknown terrifying possibilities that science might unleash. This genre creates fear through speculative science-based scenarios rather than supernatural or purely psychological threats.</p>
+    <p>Key characteristics of Sci-Fi Horror films typically include:</p>
+    <ul>
+      <li><strong>Scientific or Technological Threats:</strong> Horror often arises from experiments gone wrong, malevolent artificial intelligence, dangerous technologies, or hostile alien life forms.</li>
+      <li><strong>Exploration of the Unknown:</strong> Fear of the unknown, whether it's deep space, alien planets, or the consequences of unchecked scientific progress.</li>
+      <li><strong>Dystopian Settings:</strong> Often set in futuristic societies where technology has led to oppressive or dangerous conditions.</li>
+      <li><strong>Body Horror:</strong> Physical transformations, mutations, or parasitic infections are common elements, often stemming from scientific or alien sources.</li>
+      <li><strong>Existential Dread:</strong> The genre can explore humanity's insignificance in the face of cosmic horrors or the loss of identity due to technological interference.</li>
+      <li><strong>Social Commentary:</strong> Often uses its speculative premise to comment on contemporary societal fears, scientific ethics, and human nature.</li>
+    </ul>
+  </div>
+
+  <div class="genre-section">
+    <h2>Evolution Through the Decades</h2>
+    <p><strong>Early Days (Pre-1950s):</strong> Early cinema saw foundational works that blended science fiction elements with horror, such as "Frankenstein" (1931), which explored the horror of scientific transgression, and films like Fritz Lang's "Metropolis" (1927) which, while not strictly horror, showcased dystopian technological themes that would influence the genre.</p>
+    <p><strong>1950s (Atomic Age and Alien Invasions):</strong> The post-World War II era, with its anxieties about nuclear war and the burgeoning space race, heavily influenced sci-fi horror. This decade saw a surge in films about alien invasions (e.g., "The Thing from Another World" (1951), "Invasion of the Body Snatchers" (1956)) and giant monsters mutated by radiation (e.g., "Godzilla" (1954)).</p>
+    <p><strong>1960s - 1970s (Expanding Horizons):</strong> While some classic themes continued, films started to explore more psychological and existential horrors within a sci-fi framework. The late 70s marked a turning point with Ridley Scott's "Alien" (1979), which masterfully blended suspense, body horror, and a terrifying extraterrestrial threat, setting a new benchmark for the genre.</p>
+    <p><strong>1980s (Practical Effects and Body Horror):</strong> The 80s saw a boom in sci-fi horror, often characterized by groundbreaking practical effects. Films like John Carpenter's "The Thing" (1982) and David Cronenberg's "The Fly" (1986) pushed the boundaries of body horror, while others like "Aliens" (1986) expanded on existing mythologies with more action-oriented horror.</p>
+    <p><strong>1990s - 2000s (Digital Age and New Fears):</strong> CGI began to play a larger role. The genre continued to explore themes of alien encounters, genetic engineering, and technological paranoia. Films like "Event Horizon" (1997) and the "Resident Evil" series (starting 2002) blended space or bio-horror with intense action.</p>
+    <p><strong>2010s - Present (Elevated Concepts and Indie Scene):</strong> Recent years have seen a rise in "elevated" sci-fi horror films that focus on atmosphere, psychological depth, and complex themes, alongside mainstream blockbusters. Films like "Annihilation" (2018) and "A Quiet Place" (2018) explore unique sci-fi horror concepts, and the indie scene continues to produce innovative works.</p>
+  </div>
+
+  <div class="genre-section">
+    <h2>Iconic Sci-Fi Horror Films</h2>
+    <div class="movie-examples">
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/alien1979.jpeg" alt="Alien" class="movie-image"> <div class="movie-info">
+        <h3>Alien (1979)</h3>
+        <p>Director: Ridley Scott</p>
+        <p>The crew of a commercial spacecraft encounters a deadly extraterrestrial lifeform after investigating a mysterious signal on a remote planet. A masterclass in suspense and creature design.</p>
+      </div>
+      </div>
+
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/thething1982.jpg" alt="The Thing" class="movie-image"> <div class="movie-info">
+        <h3>The Thing (1982)</h3>
+        <p>Director: John Carpenter</p>
+        <p>A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims. Celebrated for its paranoia-inducing plot and practical effects.</p>
+      </div>
+      </div>
+
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/thefly1986.jpg" alt="The Fly" class="movie-image"> <div class="movie-info">
+        <h3>The Fly (1986)</h3>
+        <p>Director: David Cronenberg</p>
+        <p>A brilliant but eccentric scientist begins to transform into a man/fly hybrid after one of his experiments goes horribly wrong. A tragic story renowned for its body horror.</p>
+      </div>
+      </div>
+
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/eventhorizon1997.jpg" alt="Event Horizon" class="movie-image"> <div class="movie-info">
+        <h3>Event Horizon (1997)</h3>
+        <p>Director: Paul W.S. Anderson</p>
+        <p>A rescue crew investigates a spaceship that disappeared into a black hole and has now returned, only to discover that something terrifying has come back with it.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="genre-section">
+    <h2>Sci-Fi Horror's Influence</h2>
+    <p>Sci-Fi Horror has had a profound influence on filmmaking, pushing the boundaries of special effects and creature design. It often serves as a potent vehicle for social commentary, reflecting contemporary anxieties about technology, the environment, and the unknown. The genre's ability to blend imaginative scientific concepts with primal fears has created some of cinema's most memorable and thought-provoking nightmares. From influencing other genres to inspiring video games and literature, Sci-Fi Horror continues to be a dynamic and relevant space for exploring humanity's hopes and fears about the future and the cosmos.</p>
+  </div>
+</div>
+
+<div id="footer" class="footer">
+  <div class="footer-content">
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>ID</th>
+        <th>Carrera</th>
+        <th>Correo</th>
+      </tr>
+      <tr>
+        <td>Maria Jose Arévalo</td>
+        <td>1094044725</td>
+        <td>Jurisprudencia</td>
+        <td>mariaj.arevalo@urosario.edu.co</td>
+      </tr>
+      <tr>
+        <td>Daniela Cortes Rodriguez</td>
+        <td>1095550727</td>
+        <td>Jurisprudencia</td>
+        <td>daniela.cortesro@urosario.edu.co</td>
+      </tr>
+    </table>
+    <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

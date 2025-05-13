@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folk Horror - Horror Cinema Museum</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional styles specific to genre pages */
+    .genre-hero {
+      width: 100%;
+      height: 400px;
+      background-image: url('imagenes/grid/folk.jpg'); /* Update with actual image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .genre-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .genre-title {
+      color: #fff;
+      font-size: 4rem;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .genre-content {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .genre-section {
+      margin-bottom: 60px;
+    }
+
+    .genre-section h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #9a0000;
+      padding-bottom: 10px;
+    }
+
+    .genre-section p, .genre-section ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .movie-examples {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .movie-card {
+      border: 1px solid #333;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .movie-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .movie-info {
+      padding: 15px;
+      background-color: #1a1a1a;
+    }
+
+    .movie-info h3 {
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    .movie-info p {
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+
+    .back-button {
+      display: inline-block;
+      background-color: #9a0000;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #700000;
+    }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-bar-content">
+    <a href="about.html">About</a>
+    <a href="#donate">Donate</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<a href="index.html">
+  <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
+</a>
+
+<div class="genre-hero">
+  <h1 class="genre-title">Folk Horror</h1>
+</div>
+
+<div class="genre-content">
+  <a href="index.html" class="back-button">← Back to Home</a>
+
+  <div class="genre-section">
+    <h2>What is Folk Horror?</h2>
+    <p>Folk horror is a subgenre of horror that draws upon folklore, pastoral settings, and ancient traditions to evoke fear and unease. It often depicts isolated rural communities where old customs, pagan beliefs, and folk religions clash with the modern world, leading to unsettling and terrifying outcomes. The horror in these narratives frequently stems from the skewed belief systems of "the folk" and the dark aspects of nature or forgotten rituals.</p>
+    <p>Key elements often found in folk horror include:</p>
+    <ul>
+      <li><strong>Rural and Isolated Settings:</strong> The landscape itself often plays a crucial role, isolating communities and individuals.</li>
+      <li><strong>Folklore and Ancient Beliefs:</strong> Themes of superstition, paganism, witchcraft, and old rituals are central.</li>
+      <li><strong>Clash of Cultures/Beliefs:</strong> Often features an outsider or modern sensibilities encountering and conflicting with deeply entrenched, ancient, or disturbing local customs.</li>
+      <li><strong>Community as a Threat:</strong> Isolated communities with their own insular traditions and "skewed belief systems" can become the source of horror.</li>
+      <li><strong>Ritual and Sacrifice:</strong> Human or animal sacrifice as part of ancient rites is a recurring theme.</li>
+      <li><strong>Atmospheric Dread:</strong> Relies more on building a sense of unease, foreboding, and psychological horror than on jump scares or overt gore.</li>
+    </ul>
+  </div>
+
+  <div class="genre-section">
+    <h2>Evolution and History</h2>
+    <p><strong>Literary Roots and Early Influences:</strong> The roots of folk horror can be traced to Gothic literature and earlier folk tales that explored the unsettling aspects of the rural and the ancient. Writers who explored pagan survivals and weird fiction influenced the thematic concerns of the genre.</p>
+    <p><strong>The "Unholy Trinity" (Late 1960s - Early 1970s):</strong> The term "folk horror" gained prominence in film discourse largely through a group of British films from this era. Often cited as the "Unholy Trinity" by Adam Scovell, these films are Michael Reeves' "Witchfinder General" (1968), Piers Haggard's "The Blood on Satan's Claw" (1971), and Robin Hardy's "The Wicker Man" (1973). These films established many of the core thematic and aesthetic concerns of cinematic folk horror, particularly the emphasis on landscape and isolated communities.</p>
+    <p><strong>Intervening Years and Global Interpretations:</strong> While the initial wave was predominantly British, folk horror elements appeared in films from other countries, drawing on their own local folklore and traditions. The genre didn't disappear but was perhaps less distinctly defined for a period.</p>
+    <p><strong>Modern Revival (2010s - Present):</strong> The 21st century has seen a significant resurgence and re-evaluation of folk horror. Films like Robert Eggers' "The Witch" (2015) and Ari Aster's "Midsommar" (2019) have brought the subgenre to new audiences, often with a focus on meticulous historical detail or "elevated horror" sensibilities that blend psychological depth with folk horror tropes. This revival has also spurred more academic and critical interest in defining and exploring the subgenre. Contemporary folk horror often carries social commentary, reflecting modern anxieties through ancient fears.</p>
+  </div>
+
+  <div class="genre-section">
+    <h2>Iconic Folk Horror Films</h2>
+    <div class="movie-examples">
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/witchfindergeneral1968.jpg" alt="Witchfinder General" class="movie-image"> <div class="movie-info">
+        <h3>Witchfinder General (1968)</h3>
+        <p>Director: Michael Reeves</p>
+        <p>Set during the English Civil War, a young soldier seeks revenge on a ruthless witch hunter who terrorizes rural communities. Known for its bleak tone and historical setting.</p>
+      </div>
+      </div>
+
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/thewickerman1973.jpg" alt="The Wicker Man" class="movie-image"> <div class="movie-info">
+        <h3>The Wicker Man (1973)</h3>
+        <p>Director: Robin Hardy</p>
+        <p>A devout Christian police sergeant travels to a remote Scottish island to investigate a missing girl, only to uncover a bizarre pagan community. A seminal work of folk horror.</p>
+      </div>
+      </div>
+
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/thewitch2015.jpg" alt="The Witch" class="movie-image"> <div class="movie-info">
+        <h3>The Witch (2015)</h3>
+        <p>Director: Robert Eggers</p>
+        <p>In 1630s New England, a Puritan family banished to the edge of a foreboding wilderness encounters dark forces. Praised for its historical authenticity and atmospheric dread.</p>
+      </div>
+      </div>
+
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/midsommar2019.jpg" alt="Midsommar" class="movie-image"> <div class="movie-info">
+        <h3>Midsommar (2019)</h3>
+        <p>Director: Ari Aster</p>
+        <p>A grieving young woman accompanies her boyfriend and his friends to a remote Swedish village for a fabled midsummer festival, which takes a sinister turn. Noted for its sun-drenched horror and disturbing rituals.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="genre-section">
+    <h2>Folk Horror's Influence</h2>
+    <p>Folk horror's influence lies in its ability to tap into primal fears related to the land, ancient beliefs, and the unsettling nature of isolated communities. It explores the darkness that can lurk beneath idyllic pastoral surfaces and the terrifying power of collective belief. The genre often challenges notions of modernity versus tradition and civilization versus the "primitive." Its emphasis on atmosphere, psychological dread, and unsettling ambiguity has influenced a new generation of horror filmmakers. As societies grapple with their relationship to history, nature, and cultural identity, folk horror continues to provide a potent lens through which to explore these anxieties.</p>
+  </div>
+</div>
+
+<div id="footer" class="footer">
+  <div class="footer-content">
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>ID</th>
+        <th>Carrera</th>
+        <th>Correo</th>
+      </tr>
+      <tr>
+        <td>Maria Jose Arévalo</td>
+        <td>1094044725</td>
+        <td>Jurisprudencia</td>
+        <td>mariaj.arevalo@urosario.edu.co</td>
+      </tr>
+      <tr>
+        <td>Daniela Cortes Rodriguez</td>
+        <td>1095550727</td>
+        <td>Jurisprudencia</td>
+        <td>daniela.cortesro@urosario.edu.co</td>
+      </tr>
+    </table>
+    <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

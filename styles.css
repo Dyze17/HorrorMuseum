@@ -60,7 +60,7 @@ p {
     top: 50%;
     transform: translateY(-50%);
     color: #fff; /* Cambia el color del texto del botón */
-    background-color: #0056b3; /* Cambia el color de fondo del botón */
+    background-color: #9a0000; /* Cambia el color de fondo del botón */
     border-radius: 5px; /* Añade un borde redondeado */
     padding: 10px; /* Añade un poco de padding */
 }
@@ -71,7 +71,7 @@ p {
     top: 50%;
     transform: translateY(-50%);
     color: #fff; /* Cambia el color del texto del botón */
-    background-color: #0056b3; /* Cambia el color de fondo del botón */
+    background-color: #9a0000; /* Cambia el color de fondo del botón */
     border-radius: 5px; /* Añade un borde redondeado */
     padding: 10px; /* Añade un poco de padding */
 }
