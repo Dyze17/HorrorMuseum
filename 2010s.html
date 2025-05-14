@@ -4,152 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horror in the 2010s - Horror Cinema Museum</title>
+  <title>Horror in the 2010s - The Rise of "Elevated" and Indie Horror - Horror Cinema Museum</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Additional styles specific to decade pages */
-    .decade-hero {
-      width: 100%;
-      height: 400px;
-      /* Image from modalContent in script.js */
-      background-image: url('imagenes/modal/2010.png');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-bottom: 40px;
-    }
-
-    .decade-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .decade-title-main {
-      color: #fff;
-      font-size: 4rem;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-
-    .decade-content-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .decade-detail-content h1 {
-      font-size: 2.2rem;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #9a0000;
-      padding-bottom: 10px;
-    }
-
-    .decade-detail-content h2 {
-      font-size: 1.8rem;
-      color: #555;
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
-
-    .decade-detail-content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      color: #444;
-    }
-
-    .back-button {
-      display: inline-block;
-      background-color: #9a0000;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-bottom: 30px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .back-button:hover {
-      background-color: #700000;
-    }
+    /* Styles as in 1970s.html example */
+    .decade-hero { width: 100%; height: 400px; background-image: url('imagenes/modal/2010.png'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 40px; }
+    .decade-hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
+    .decade-title-main { color: #fff; font-size: 3.5rem; text-align: center; position: relative; z-index: 1; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
+    .decade-content-wrapper { width: 80%; margin: 0 auto; padding: 20px; }
+    .back-button { display: inline-block; background-color: #9a0000; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; margin-bottom: 30px; font-weight: bold; transition: background-color 0.3s ease; }
+    .back-button:hover { background-color: #700000; }
+    .decade-detail-content h1 { font-size: 2.2rem; color: #333; margin-top:0; margin-bottom: 15px; border-bottom: 2px solid #9a0000; padding-bottom: 10px;}
+    .decade-detail-content h2 { font-size: 1.8rem; color: #555; margin-top: 25px; margin-bottom: 10px;}
+    .decade-detail-content p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; color: #444;}
+    .narrative-intro, .narrative-conclusion { font-style: italic; color: #555; margin-bottom:25px; padding-bottom:15px; border-bottom: 1px dashed #eee;}
+    .narrative-conclusion {margin-top: 30px; border-top: 1px dashed #eee; border-bottom: none;}
   </style>
 </head>
 <body>
-<div class="top-bar">
-  <div class="top-bar-content">
-    <a href="about.html">About</a>
-    <a href="#donate">Donate</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+<div class="top-bar"> <div class="top-bar-content"> <a href="about.html">About</a> <a href="#donate">Donate</a> <a href="contact.html">Contact</a> </div> </div>
+<a href="index.html"> <img src="imagenes/logomuseo.png" alt="Horror Cinema Museum Logo" class="logo"> </a>
 
-<a href="index.html">
-  <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
-</a>
-
-<div class="decade-hero">
-  <h1 class="decade-title-main">Horror in the 2010s</h1>
-</div>
+<div class="decade-hero"> <h1 class="decade-title-main">Horror in the 2010s: The Rise of "Elevated" and Indie Horror</h1> </div>
 
 <div class="decade-content-wrapper">
-  <a href="index.html" class="back-button">← Back to Home</a>
-
+  <a href="index.html" class="back-button">← Back to Museum Home</a>
   <div class="decade-detail-content">
-    <h1>2010s: The Horror Renaissance</h1>
-    <p>Horror evolved with intelligent, thought-provoking films that combined psychological depth, social commentary, and supernatural terror. Movies like Get Out and Hereditary pushed the genre beyond simple scares, exploring themes of trauma, identity, and societal fears while still delivering unsettling and memorable horror experiences.</p>
-    <h2>It Follows (2014)</h2>
-    <p>A minimalist yet terrifying film, this film introduces a relentless supernatural entity that pursues its victims after any sexual contact. With a dreamlike atmosphere, eerie cinematography, and an unnerving score, the film creates a constant sense of dread, redefining supernatural horror with its unique premise and slow-burning tension.</p>
-    <img src='imagenes/modal/peliculas/itfollows2014.jpg' class='modalImageP' alt='It Follows 2014'>
-    <h2>The Witch (2015)</h2>
-    <p>A slow-burn folk horror film set in 1600s New England, The Witch follows a Puritan family exiled to the wilderness, where paranoia and religious extremism drive them to madness. With haunting cinematography, eerie authenticity, and psychological dread, it masterfully explores isolation, faith, and the fear of the unknown.</p>
-    <img src='imagenes/modal/peliculas/thewitch2015.jpg' class='modalImageP' alt='The Witch 2015'>
-    <h2>Get Out (2017)</h2>
-    <p>A psychological horror film blending racial commentary and psychological terror, Get Out follows a Black man visiting his white girlfriend’s family, only to uncover a sinister secret. With unsettling tension, social satire, and mind-bending twists, Jordan Peele’s directorial debut redefined modern horror, earning him an Oscar for Best Original Screenplay.</p>
-    <img src='imagenes/modal/peliculas/getout2017.jpg' class='modalImageP' alt='Get Out 2017'>
-    <h2>Hereditary (2018)</h2>
-    <p>A disturbing family horror film that explores grief, trauma, and supernatural terror, Hereditary follows a family unraveling dark secrets after their grandmother’s death. With masterful tension, unsettling imagery, and an unforgettable performance by Toni Collette, the film builds to a shocking and nightmarish climax that lingers long after the credits roll.</p>
-    <img src='imagenes/modal/peliculas/hereditary2018.jpg' class='modalImageP' alt='Hereditary 2018'>
-  </div>
-</div>
+    <p class="narrative-intro">
+      Following a decade of remakes and extreme horror, the 2010s witnessed a significant shift often dubbed the "horror renaissance" or the rise of "elevated" or "art-house" horror. Independent filmmakers gained prominence, crafting films that blended psychological depth, social commentary, and often arthouse aesthetics with traditional horror tropes, earning critical acclaim and captivating new audiences.
+    </p>
 
-<div id="footer" class="footer">
-  <div class="footer-content">
-    <table>
-      <tr>
-        <th>Nombre</th>
-        <th>ID</th>
-        <th>Carrera</th>
-        <th>Correo</th>
-      </tr>
-      <tr>
-        <td>Maria Jose Arévalo</td>
-        <td>1094044725</td>
-        <td>Jurisprudencia</td>
-        <td>mariaj.arevalo@urosario.edu.co</td>
-      </tr>
-      <tr>
-        <td>Daniela Cortes Rodriguez</td>
-        <td>1095550727</td>
-        <td>Jurisprudencia</td>
-        <td>daniela.cortesro@urosario.edu.co</td>
-      </tr>
-    </table>
-    <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+    <h1>Elevated Themes, Indie Spirit, and Social Commentary</h1>
+    <p>The 2010s saw horror evolve with a new wave of intelligent, thought-provoking films. These often combined profound psychological depth and potent social commentary with supernatural or visceral terror. Movies like "Get Out" and "Hereditary" pushed the genre beyond simple scares, exploring themes of trauma, identity, grief, and systemic societal fears, all while delivering unsettling and memorable horror experiences. The indie scene thrived, producing unique and often minimalist horror that resonated strongly and demonstrated the genre's continued artistic evolution.</p>
+
+    <h2>It Follows (2014)</h2>
+    <p>David Robert Mitchell's "It Follows" is a minimalist yet terrifying film that introduced a relentless, slow-walking supernatural entity passed through sexual contact. Its dreamlike atmosphere, eerie cinematography by Mike Gioulakis, and an iconic synth score by Disasterpeace created a constant sense of dread. It redefined supernatural horror with its unique premise and slow-burning tension, becoming an indie sensation and a prime example of how horror could evolve classic stalking tropes into allegories for modern anxieties.</p>
+    <img src='imagenes/modal/peliculas/itfollows2014.jpg' class='modalImageP' alt='A chilling scene from the indie horror It Follows (2014)'>
+
+    <h2>The Witch (2015)</h2>
+    <p>Robert Eggers' "The Witch," subtitled "A New-England Folktale," is a meticulously crafted slow-burn folk horror set in the 1600s. It follows a Puritan family exiled to the wilderness, where paranoia, religious extremism, and an unseen evil drive them to madness. Its haunting cinematography, period-accurate dialogue, and psychological dread masterfully explore themes of isolation, faith, and the fear of the unknown, signaling a major resurgence and evolution of the folk horror subgenre.</p>
+    <img src='imagenes/modal/peliculas/thewitch2015.jpg' class='modalImageP' alt='A scene depicting the Puritan family from The Witch (2015)'>
+
+    <h2>Get Out (2017)</h2>
+    <p>Jordan Peele’s directorial debut was a cultural landmark, seamlessly blending sharp racial commentary and biting social satire with genuinely terrifying psychological horror. The film follows a Black man visiting his white girlfriend’s seemingly liberal family, only to uncover a sinister, unimaginable secret. "Get Out" redefined modern horror by proving it could be a powerful vehicle for discussing complex social issues, earning critical acclaim and an Oscar for Best Original Screenplay, and paving the way for more socially conscious horror.</p>
+    <img src='imagenes/modal/peliculas/getout2017.jpg' class='modalImageP' alt='Daniel Kaluuya in a pivotal scene from Get Out (2017)'>
+
+    <h2>Hereditary (2018)</h2>
+    <p>Ari Aster's "Hereditary" is a deeply disturbing family horror film that masterfully explores grief, inherited trauma, and escalating supernatural terror. Following a family unraveling dark secrets after their secretive grandmother’s death, the film builds unbearable tension through its unsettling imagery, shocking narrative turns, and an unforgettable, raw performance by Toni Collette. It cemented the rise of "elevated horror" focused on emotional and psychological devastation as much as scares, showing a new evolution in how horror could explore the darkest corners of family life.</p>
+    <img src='imagenes/modal/peliculas/hereditary2018.jpg' class='modalImageP' alt='A haunting image related to the family trauma in Hereditary (2018)'>
+
+    <p class="narrative-conclusion">
+      The 2010s marked a significant evolution, with horror gaining new critical respect through films that were as thematically rich as they were terrifying. The rise of "elevated horror" and the continued strength of the indie scene demonstrated the genre's versatility and its capacity to address complex human experiences and societal issues. This decade set a new course, paving the way for the diverse and often challenging horror narratives of the 2020s.
+    </p>
+    <div class="decade-navigation">
+      <a href="2000s.html" class="decade-nav-button prev">← Previous Decade: 2000s</a>
+      <a href="2020s.html" class="decade-nav-button next">Next Decade: 2020s Horror →</a>
+    </div>
   </div>
 </div>
+<div id="footer" class="footer"> <div class="footer-content"> <table><tr><th>Nombre</th><th>ID</th><th>Carrera</th><th>Correo</th></tr><tr><td>Maria Jose Arévalo</td><td>1094044725</td><td>Jurisprudencia</td><td>mariaj.arevalo@urosario.edu.co</td></tr><tr><td>Daniela Cortes Rodriguez</td><td>1095550727</td><td>Jurisprudencia</td><td>daniela.cortesro@urosario.edu.co</td></tr></table> <img src="imagenes/logo2.png" alt="Museum Sub-Logo" class="footer-logo"> </div> </div>
 <script src="script.js"></script>
 </body>
 </html>

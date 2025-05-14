@@ -4,152 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horror in the 2000s - Horror Cinema Museum</title>
+  <title>Horror in the 2000s - Remakes, J-Horror, and Extreme Measures - Horror Cinema Museum</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Additional styles specific to decade pages */
-    .decade-hero {
-      width: 100%;
-      height: 400px;
-      /* Image from modalContent in script.js */
-      background-image: url('imagenes/modal/2000.png');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-bottom: 40px;
-    }
-
-    .decade-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .decade-title-main {
-      color: #fff;
-      font-size: 4rem;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-
-    .decade-content-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .decade-detail-content h1 {
-      font-size: 2.2rem;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #9a0000;
-      padding-bottom: 10px;
-    }
-
-    .decade-detail-content h2 {
-      font-size: 1.8rem;
-      color: #555;
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
-
-    .decade-detail-content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      color: #444;
-    }
-
-    .back-button {
-      display: inline-block;
-      background-color: #9a0000;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-bottom: 30px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .back-button:hover {
-      background-color: #700000;
-    }
+    /* Styles as in 1970s.html example */
+    .decade-hero { width: 100%; height: 400px; background-image: url('imagenes/modal/2000.png'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 40px; }
+    .decade-hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
+    .decade-title-main { color: #fff; font-size: 3.5rem; text-align: center; position: relative; z-index: 1; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
+    .decade-content-wrapper { width: 80%; margin: 0 auto; padding: 20px; }
+    .back-button { display: inline-block; background-color: #9a0000; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; margin-bottom: 30px; font-weight: bold; transition: background-color 0.3s ease; }
+    .back-button:hover { background-color: #700000; }
+    .decade-detail-content h1 { font-size: 2.2rem; color: #333; margin-top:0; margin-bottom: 15px; border-bottom: 2px solid #9a0000; padding-bottom: 10px;}
+    .decade-detail-content h2 { font-size: 1.8rem; color: #555; margin-top: 25px; margin-bottom: 10px;}
+    .decade-detail-content p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; color: #444;}
+    .narrative-intro, .narrative-conclusion { font-style: italic; color: #555; margin-bottom:25px; padding-bottom:15px; border-bottom: 1px dashed #eee;}
+    .narrative-conclusion {margin-top: 30px; border-top: 1px dashed #eee; border-bottom: none;}
   </style>
 </head>
 <body>
-<div class="top-bar">
-  <div class="top-bar-content">
-    <a href="about.html">About</a>
-    <a href="#donate">Donate</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+<div class="top-bar"> <div class="top-bar-content"> <a href="about.html">About</a> <a href="#donate">Donate</a> <a href="contact.html">Contact</a> </div> </div>
+<a href="index.html"> <img src="imagenes/logomuseo.png" alt="Horror Cinema Museum Logo" class="logo"> </a>
 
-<a href="index.html">
-  <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
-</a>
-
-<div class="decade-hero">
-  <h1 class="decade-title-main">Horror in the 2000s</h1>
-</div>
+<div class="decade-hero"> <h1 class="decade-title-main">Horror in the 2000s: Remakes, J-Horror, and Extreme Measures</h1> </div>
 
 <div class="decade-content-wrapper">
-  <a href="index.html" class="back-button">← Back to Home</a>
-
+  <a href="index.html" class="back-button">← Back to Museum Home</a>
   <div class="decade-detail-content">
-    <h1>2000s: Remakes & Torture Horror</h1>
-    <p>The 2000s saw a wave of horror remakes, bringing back classics with modern intensity. The torture porn subgenre also emerged, with films like Saw and Hostel focusing on extreme violence and psychological torment. Supernatural horror gained traction with hits like The Ring, blending eerie atmosphere with disturbing imagery.</p>
-    <h2>The Others (2001)</h2>
-    <p>A gothic horror film about a mother shielding her light-sensitive children from unseen forces in their isolated mansion, building an eerie atmosphere that leads to one of the genre’s most haunting and unforgettable twists.</p>
-    <img src='imagenes/modal/peliculas/theothers2001.jpg' class='modalImageP' alt='The Others 2001'>
-    <h2>The Ring (2002)</h2>
-    <p>A chilling supernatural horror about a cursed videotape that dooms its viewers to death in seven days. Blending eerie visuals, psychological tension, and a creeping sense of dread, the film introduced Samara, a vengeful ghost whose unsettling presence and tragic backstory made her one of horror’s most terrifying figures.</p>
-    <img src='imagenes/modal/peliculas/thering2002.png' class='modalImageP' alt='The Ring 2002'>
-    <h2>Saw (2004)</h2>
-    <p>A psychological horror-thriller that launched the torture horror trend, Saw introduced the sadistic Jigsaw Killer, who forced victims into gruesome traps designed to test their will to live. Its shocking twists, moral dilemmas, and brutal scenarios made it a defining film of the 2000s horror landscape.</p>
-    <img src='imagenes/modal/peliculas/saw2004.jpg' class='modalImageP' alt='Saw 2004'>
-    <h2>The Hills Have Eyes (2006)</h2>
-    <p>A brutal remake of Wes Craven’s 1977 classic, The Hills Have Eyes follows a stranded family in the desert, where they are hunted by grotesque, radiation-mutated cannibals. With intense violence, relentless suspense, and unflinching brutality, the film redefined survival horror for a modern audience.</p>
-    <img src='imagenes/modal/peliculas/thehillshaveeyes2006.jpg' class='modalImageP' alt='The Hills Have Eyes 2006'>
-  </div>
-</div>
+    <p class="narrative-intro">
+      The new millennium brought with it a complex tapestry of anxieties, from terrorism to rapid technological change, and horror cinema reflected this uncertainty. Building on the found footage boom and seeking new ways to shock, the 2000s saw a surge in remakes of classic horrors, the significant influence of Asian horror (J-Horror), and the rise of more extreme, boundary-pushing subgenres.
+    </p>
 
-<div id="footer" class="footer">
-  <div class="footer-content">
-    <table>
-      <tr>
-        <th>Nombre</th>
-        <th>ID</th>
-        <th>Carrera</th>
-        <th>Correo</th>
-      </tr>
-      <tr>
-        <td>Maria Jose Arévalo</td>
-        <td>1094044725</td>
-        <td>Jurisprudencia</td>
-        <td>mariaj.arevalo@urosario.edu.co</td>
-      </tr>
-      <tr>
-        <td>Daniela Cortes Rodriguez</td>
-        <td>1095550727</td>
-        <td>Jurisprudencia</td>
-        <td>daniela.cortesro@urosario.edu.co</td>
-      </tr>
-    </table>
-    <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+    <h1>Global Influences, Digital Nightmares, and "Torture Porn"</h1>
+    <p>The 2000s was a decade defined by a wave of horror remakes, as studios looked to update classic titles for modern audiences. Simultaneously, the chilling psychological and supernatural horror films from Japan and other Asian countries (often dubbed "J-Horror") made a huge impact, leading to many successful American adaptations. The accessibility of digital filmmaking continued to fuel independent horror, particularly found footage. This era also saw the emergence and controversy of "torture horror" (or "gorno"), a subgenre focusing on extreme violence and graphic depictions of suffering, which pushed the boundaries of mainstream horror content and sparked considerable debate about the genre's direction.</p>
+
+    <h2>The Others (2001)</h2>
+    <p>Alejandro Amenábar's "The Others" was a masterfully crafted gothic horror film that relied on atmosphere, suspense, and a stunning twist rather than gore. Starring Nicole Kidman, it harked back to classic ghost stories, proving that subtle, psychological horror could still captivate audiences in an era trending towards more explicit content. Its success demonstrated the enduring appeal of well-told, atmospheric tales of the supernatural and the evolution of the haunted house narrative.</p>
+    <img src='imagenes/modal/peliculas/theothers2001.jpg' class='modalImageP' alt='Nicole Kidman in the atmospheric film The Others (2001)'>
+
+    <h2>The Ring (2002)</h2>
+    <p>Gore Verbinski's remake of the Japanese film "Ringu" was a major catalyst for the J-Horror adaptation craze in Hollywood. Its eerie visuals, unsettling atmosphere, and the iconic image of the vengeful ghost Samara emerging from a television screen terrified audiences. "The Ring" successfully translated the unique psychological dread of Japanese horror for Western viewers, popularizing tropes like cursed videotapes and long-haired female ghosts, and significantly influencing the look and feel of supernatural horror for years to come.</p>
+    <img src='imagenes/modal/peliculas/thering2002.png' class='modalImageP' alt='The terrifying Samara from the J-Horror remake The Ring (2002)'>
+
+    <h2>Saw (2004)</h2>
+    <p>James Wan's low-budget independent film launched one of the most successful (and controversial) horror franchises of all time. Introducing the sadistic Jigsaw Killer and his elaborate, morally charged traps, "Saw" became a cornerstone of the "torture horror" subgenre. Its intricate plot twists, moral dilemmas posed to victims, and graphic scenarios pushed the boundaries of mainstream horror violence, reflecting an evolution towards more extreme and visceral forms of on-screen suffering.</p>
+    <img src='imagenes/modal/peliculas/saw2004.jpg' class='modalImageP' alt='A scene depicting one of Jigsaw traps in Saw (2004)'>
+
+    <h2>The Hills Have Eyes (2006)</h2>
+    <p>Alexandre Aja's brutal remake of Wes Craven’s 1977 cult classic exemplified the decade's trend for grittier, more intense reinterpretations of older horror films. This version ramped up the violence and unflinching brutality, following a stranded family hunted by grotesque, radiation-mutated cannibals. It redefined survival horror for a modern audience accustomed to more graphic content, showcasing how remakes could evolve to become even more extreme than their originals.</p>
+    <img src='imagenes/modal/peliculas/thehillshaveeyes2006.jpg' class='modalImageP' alt='A menacing figure from the remake The Hills Have Eyes (2006)'>
+
+    <p class="narrative-conclusion">
+      The 2000s was a decade of looking back through remakes, looking East for new scares, and looking inward at how far the boundaries of on-screen horror could be pushed. While controversial, the rise of extreme subgenres and the continued success of supernatural and found footage films showed horror's diverse evolution. These trends laid the groundwork for the "elevated horror" and more socially conscious narratives that would gain prominence in the 2010s.
+    </p>
+    <div class="decade-navigation">
+      <a href="1990s.html" class="decade-nav-button prev">← Previous Decade: 1990s</a>
+      <a href="2010s.html" class="decade-nav-button next">Next Decade: 2010s Horror →</a>
+    </div>
   </div>
 </div>
+<div id="footer" class="footer"> <div class="footer-content"> <table><tr><th>Nombre</th><th>ID</th><th>Carrera</th><th>Correo</th></tr><tr><td>Maria Jose Arévalo</td><td>1094044725</td><td>Jurisprudencia</td><td>mariaj.arevalo@urosario.edu.co</td></tr><tr><td>Daniela Cortes Rodriguez</td><td>1095550727</td><td>Jurisprudencia</td><td>daniela.cortesro@urosario.edu.co</td></tr></table> <img src="imagenes/logo2.png" alt="Museum Sub-Logo" class="footer-logo"> </div> </div>
 <script src="script.js"></script>
 </body>
 </html>

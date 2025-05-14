@@ -4,163 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horror in the 1930s - Horror Cinema Museum</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Additional styles specific to decade pages */
-    .decade-hero {
-      width: 100%;
-      height: 400px;
-      /* Image from modalContent in script.js */
-      background-image: url('imagenes/modal/1930.png');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-bottom: 40px;
-    }
-
-    .decade-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .decade-title-main {
-      color: #fff;
-      font-size: 4rem;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-
-    .decade-content-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .decade-detail-content h1 {
-      font-size: 2.2rem;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #9a0000;
-      padding-bottom: 10px;
-    }
-
-    .decade-detail-content h2 {
-      font-size: 1.8rem;
-      color: #555;
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
-
-    .decade-detail-content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      color: #444;
-    }
-
-    /* .modalImageP class is already in styles.css */
-    /* If specific adjustments are needed for page context:
-    .decade-detail-content .modalImageP {
-        max-width: 60%;
-        margin: 20px auto;
-        display: block;
-        border: 1px solid #ddd;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    */
-
-    .back-button {
-      display: inline-block;
-      background-color: #9a0000;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-bottom: 30px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .back-button:hover {
-      background-color: #700000;
-    }
-  </style>
+  <title>Horror in the 1930s - A New Beginning - Horror Cinema Museum</title>
+  <link rel="stylesheet" href="styles.css"> <style>
+  /* decade-hero, decade-title-main, etc., styles as defined before */
+  .decade-hero {
+    width: 100%; height: 400px; background-image: url('imagenes/modal/1930.png'); /* Path changed */
+    background-size: cover; background-position: center; display: flex;
+    align-items: center; justify-content: center; position: relative; margin-bottom: 40px;
+  }
+  .decade-hero::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .decade-title-main {
+    color: #fff; font-size: 3.5rem; text-align: center; position: relative;
+    z-index: 1; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  .decade-content-wrapper { width: 80%; margin: 0 auto; padding: 20px; }
+  .back-button {
+    display: inline-block; background-color: #9a0000; color: white; padding: 12px 24px;
+    text-decoration: none; border-radius: 5px; margin-bottom: 30px; font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .back-button:hover { background-color: #700000; }
+  .decade-detail-content h1 { font-size: 2.2rem; color: #333; margin-top:0; margin-bottom: 15px; border-bottom: 2px solid #9a0000; padding-bottom: 10px;}
+  .decade-detail-content h2 { font-size: 1.8rem; color: #555; margin-top: 25px; margin-bottom: 10px;}
+  .decade-detail-content p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; color: #444;}
+  .narrative-intro, .narrative-conclusion { font-style: italic; color: #555; margin-bottom:25px; padding-bottom:15px; border-bottom: 1px dashed #eee;}
+  .narrative-conclusion {margin-top: 30px; border-top: 1px dashed #eee; border-bottom: none;}
+  /* CSS for .decade-navigation, .decade-nav-button from previous response should be in styles.css */
+</style>
 </head>
 <body>
 <div class="top-bar">
   <div class="top-bar-content">
-    <a href="about.html">About</a>
-    <a href="#donate">Donate</a>
-    <a href="contact.html">Contact</a>
-  </div>
+    <a href="about.html">About</a> <a href="#donate">Donate</a>
+    <a href="contact.html">Contact</a> </div>
 </div>
 
-<a href="index.html">
-  <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
-</a>
+<a href="index.html"> <img src="imagenes/logomuseo.png" alt="Horror Cinema Museum Logo" class="logo"> </a>
 
 <div class="decade-hero">
-  <h1 class="decade-title-main">Horror in the 1930s</h1>
+  <h1 class="decade-title-main">Horror in the 1930s: The Monsters Emerge</h1>
 </div>
 
 <div class="decade-content-wrapper">
-  <a href="index.html" class="back-button">← Back to Home</a>
+  <a href="index.html" class="back-button">← Back to Museum Home</a> <div class="decade-detail-content">
+  <p class="narrative-intro">
+    As the silent era gave way to the "talkies," a new genre began to crystallize, drawing from gothic literature, European expressionism, and primal fears. The 1930s ushered in the first true golden age of horror cinema, where iconic monsters, born from folklore and literary nightmares, first flickered across the silver screen, defining a visual language that would echo for generations.
+  </p>
 
-  <div class="decade-detail-content">
-    <h1>1930s – The Origin of Horror</h1>
-    <p>The 1930s marked the birth of horror cinema as a recognized genre, with Universal Studios leading the way. Iconic monsters like <b>Dracula</b>, <b>Frankenstein</b>, and <b>The Mummy</b> introduced audiences to gothic horror, atmospheric storytelling, and memorable performances. These films established many of the tropes and archetypes that would define horror for decades to come.</p>
-    <h2>Dracula (1931)</h2>
-    <p>This version of Bram Stoker's novel brought Bela Lugosi's classic interpretation of Count Dracula to the screen. The film's haunting mood, dark cinematography, and Lugosi's frightening performance set the standard for the many vampire movies that followed.</p>
-    <img src='imagenes/modal/peliculas/dracula1931.png' class='modalImageP' alt='Dracula 1931'>
-    <h2>Frankenstein (1931)</h2>
-    <p>James Whale directed this adaptation of Mary Shelley's book, which made Boris Karloff a star as the tragic Monster. The film's theme of science out of control and Karloff's pantomime acting have established it as a genre classic.</p>
-    <img src='imagenes/modal/peliculas/frankenstein1931.jpg' class='modalImageP' alt='Frankenstein 1931'>
-    <h2>The Mummy (1932)</h2>
-    <p>Starring Boris Karloff as the brought-back-to-life Imhotep, The Mummy blended supernatural horror and romance when the brought-back-to-life priest seeks out his lost love. Its gruesome visuals and ancient Egyptian mythology added a new dimension to horror.</p>
-    <img src='imagenes/modal/peliculas/themummy1932.jpg' class='modalImageP' alt='The Mummy 1932'>
-    <h2>King Kong (1933)</h2>
-    <p>Though often classified as a monster-adventure film, King Kong had strong horror elements, with its terrifying depiction of a giant ape terrorizing New York City. The film’s groundbreaking stop-motion effects made it a milestone in special effects history.</p>
-    <img src='imagenes/modal/peliculas/kingkong1933.png' class='modalImageP' alt='King Kong 1933'>
-  </div>
+  <h1>Universal's Reign: The Origin of Iconic Horror</h1>
+  <p>The 1930s truly marked the birth of horror cinema as a recognized and wildly popular genre, with Universal Studios masterfully leading the charge. Capitalizing on the advent of sound, they brought to life a pantheon of iconic monsters like Dracula, Frankenstein's creation, and The Mummy. These films introduced audiences to the chilling allure of gothic horror, weaving tales with atmospheric storytelling, groundbreaking makeup, and unforgettable performances that established many of the tropes and archetypes integral to horror's evolution. These weren't just scary movies; they were cultural events, reflecting anxieties of the time while offering thrilling escapism.</p>
+
+  <h2>Dracula (1931)</h2>
+  <p>Tod Browning's "Dracula," starring Bela Lugosi, didn't just adapt Bram Stoker's novel; it seared the image of the aristocratic, caped vampire into global consciousness. Lugosi's hypnotic gaze and Hungarian accent became inseparable from the character, setting a standard for countless vampire portrayals. Its atmospheric use of shadow and silence, partly a carry-over from silent film techniques, perfectly captured the dread of the unseen, proving that sound could also be used to amplify fear through its absence.</p>
+  <img src='imagenes/modal/peliculas/dracula1931.png' class='modalImageP' alt='Bela Lugosi as the iconic Count Dracula in the 1931 film'> <h2>Frankenstein (1931)</h2>
+  <p>James Whale's "Frankenstein" transformed Mary Shelley's philosophical tale into a cinematic touchstone of "science gone awry." Boris Karloff, under Jack Pierce's revolutionary makeup, delivered a nuanced performance that made the Monster both terrifying and tragic. This film was pivotal in cementing the "mad scientist" trope and explored themes of creation, responsibility, and what it truly means to be human (or monstrous), significantly shaping the ethical questions horror would continue to explore.</p>
+  <img src='imagenes/modal/peliculas/frankenstein1931.jpg' class='modalImageP' alt='Boris Karloff as Frankenstein Monster in the influential 1931 movie'> <h2>The Mummy (1932)</h2>
+  <p>Also starring Boris Karloff, Karl Freund's "The Mummy" tapped into the public's fascination with Egyptology, spurred by archaeological discoveries of the time. It blended supernatural horror with a tragic romance, as the reanimated Imhotep sought his lost love across millennia. Its chilling depiction of a curse brought to life and the power of ancient rituals added a new, exotic dimension to horror, showcasing the genre's ability to draw fear from diverse cultural mythologies.</p>
+  <img src='imagenes/modal/peliculas/themummy1932.jpg' class='modalImageP' alt='Boris Karloff as the reanimated Imhotep in The Mummy (1932)'> <h2>King Kong (1933)</h2>
+  <p>While a grand adventure, "King Kong" delivered potent doses of monster horror, especially with its terrifying depiction of a giant ape running amok. Willis O'Brien's groundbreaking stop-motion animation brought Kong to life with astonishing realism for its time, demonstrating the power of special effects to realize fantastical threats. It laid the groundwork for the "kaiju" and giant monster subgenres that would terrify and thrill audiences for decades to come.</p>
+  <img src='imagenes/modal/peliculas/kingkong1933.png' class='modalImageP' alt='The giant ape King Kong holding Fay Wray in the 1933 classic'> <p class="narrative-conclusion">
+  The monsters born in the 1930s were more than just villains; they became enduring cultural icons, laying a rich foundation for the horror genre. Their success proved that audiences craved tales of the macabre and the supernatural, paving the way for future filmmakers to explore an even wider spectrum of fear as cinema and society continued to evolve into the Atomic Age and beyond.
+</p>
+
+  <div class="decade-navigation">
+    <a href="#" class="decade-nav-button prev hidden">← Previous Decade</a>
+    <a href="1950s.html" class="decade-nav-button next">Next Decade: 1950s Horror →</a> </div>
+</div>
 </div>
 
 <div id="footer" class="footer">
   <div class="footer-content">
-    <table>
-      <tr>
-        <th>Nombre</th>
-        <th>ID</th>
-        <th>Carrera</th>
-        <th>Correo</th>
-      </tr>
-      <tr>
-        <td>Maria Jose Arévalo</td>
-        <td>1094044725</td>
-        <td>Jurisprudencia</td>
-        <td>mariaj.arevalo@urosario.edu.co</td>
-      </tr>
-      <tr>
-        <td>Daniela Cortes Rodriguez</td>
-        <td>1095550727</td>
-        <td>Jurisprudencia</td>
-        <td>daniela.cortesro@urosario.edu.co</td>
-      </tr>
-    </table>
-    <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
-  </div>
+    <table><tr><th>Nombre</th><th>ID</th><th>Carrera</th><th>Correo</th></tr><tr><td>Maria Jose Arévalo</td><td>1094044725</td><td>Jurisprudencia</td><td>mariaj.arevalo@urosario.edu.co</td></tr><tr><td>Daniela Cortes Rodriguez</td><td>1095550727</td><td>Jurisprudencia</td><td>daniela.cortesro@urosario.edu.co</td></tr></table>
+    <img src="imagenes/logo2.png" alt="Museum Sub-Logo" class="footer-logo"> </div>
 </div>
-<script src="script.js"></script>
-</body>
+<script src="script.js"></script> </body>
 </html>

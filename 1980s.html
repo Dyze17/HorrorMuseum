@@ -4,152 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horror in the 1980s - Horror Cinema Museum</title>
+  <title>Horror in the 1980s - Slashers, Gore, and Iconic Villains - Horror Cinema Museum</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Additional styles specific to decade pages */
-    .decade-hero {
-      width: 100%;
-      height: 400px;
-      /* Image from modalContent in script.js */
-      background-image: url('imagenes/modal/1980.png');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-bottom: 40px;
-    }
-
-    .decade-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .decade-title-main {
-      color: #fff;
-      font-size: 4rem;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-
-    .decade-content-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .decade-detail-content h1 {
-      font-size: 2.2rem;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #9a0000;
-      padding-bottom: 10px;
-    }
-
-    .decade-detail-content h2 {
-      font-size: 1.8rem;
-      color: #555;
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
-
-    .decade-detail-content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      color: #444;
-    }
-
-    .back-button {
-      display: inline-block;
-      background-color: #9a0000;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-bottom: 30px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .back-button:hover {
-      background-color: #700000;
-    }
+    /* Styles as in 1970s.html example */
+    .decade-hero { width: 100%; height: 400px; background-image: url('imagenes/modal/1980.png'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 40px; }
+    .decade-hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
+    .decade-title-main { color: #fff; font-size: 3.5rem; text-align: center; position: relative; z-index: 1; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
+    .decade-content-wrapper { width: 80%; margin: 0 auto; padding: 20px; }
+    .back-button { display: inline-block; background-color: #9a0000; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; margin-bottom: 30px; font-weight: bold; transition: background-color 0.3s ease; }
+    .back-button:hover { background-color: #700000; }
+    .decade-detail-content h1 { font-size: 2.2rem; color: #333; margin-top:0; margin-bottom: 15px; border-bottom: 2px solid #9a0000; padding-bottom: 10px;}
+    .decade-detail-content h2 { font-size: 1.8rem; color: #555; margin-top: 25px; margin-bottom: 10px;}
+    .decade-detail-content p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; color: #444;}
+    .narrative-intro, .narrative-conclusion { font-style: italic; color: #555; margin-bottom:25px; padding-bottom:15px; border-bottom: 1px dashed #eee;}
+    .narrative-conclusion {margin-top: 30px; border-top: 1px dashed #eee; border-bottom: none;}
   </style>
 </head>
 <body>
-<div class="top-bar">
-  <div class="top-bar-content">
-    <a href="about.html">About</a>
-    <a href="#donate">Donate</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+<div class="top-bar"> <div class="top-bar-content"> <a href="about.html">About</a> <a href="#donate">Donate</a> <a href="contact.html">Contact</a> </div> </div>
+<a href="index.html"> <img src="imagenes/logomuseo.png" alt="Horror Cinema Museum Logo" class="logo"> </a>
 
-<a href="index.html">
-  <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
-</a>
-
-<div class="decade-hero">
-  <h1 class="decade-title-main">Horror in the 1980s</h1>
-</div>
+<div class="decade-hero"> <h1 class="decade-title-main">Horror in the 1980s: Slashers, Gore, and Iconic Villains</h1> </div>
 
 <div class="decade-content-wrapper">
-  <a href="index.html" class="back-button">← Back to Home</a>
-
+  <a href="index.html" class="back-button">← Back to Museum Home</a>
   <div class="decade-detail-content">
-    <h1>1980s: The Slasher Boom & Practical Effects</h1>
-    <p>The 1980s saw the rise of the slasher genre, with masked killers and excessive gore dominating the decade. Practical effects reached new heights, creating unforgettable horror imagery.</p>
-    <h2>The Shining (1980)</h2>
-    <p>Stanley Kubrick’s adaptation of Stephen King’s novel was a masterclass in psychological horror, with Jack Nicholson’s haunting performance, unsettling cinematography, and a slow-burning sense of dread. Its ambiguous storytelling and eerie atmosphere have made it one of horror’s most analyzed films.</p>
-    <img src='imagenes/modal/peliculas/theshining1980.jpg' class='modalImageP' alt='The Shining 1980'>
-    <h2>The Thing (1982)</h2>
-    <p>John Carpenter’s paranoid horror masterpiece showcased groundbreaking practical effects, creating grotesque and nightmarish transformations. Its tense, isolated setting and themes of mistrust and survival turned it into a cult classic, influencing generations of horror and sci-fi films.</p>
-    <img src='imagenes/modal/peliculas/thething1982.jpg' class='modalImageP' alt='The Thing 1982'>
-    <h2>A Nightmare on Elm Street (1984)</h2>
-    <p>Wes Craven introduced Freddy Krueger, a burned killer who haunts and murders victims in their dreams. His supernatural abilities, grotesque appearance, and dark humor set the film apart from other slashers, making Freddy one of horror’s most iconic villains.</p>
-    <img src='imagenes/modal/peliculas/nightmareonelmstreet1984.png' class='modalImageP' alt='A Nightmare on Elm Street 1984'>
-    <h2>Hellraiser (1987)</h2>
-    <p>Clive Barker’s dark and twisted horror film introduced the Cenobites, otherworldly beings who blur the line between pain and pleasure. Its grotesque imagery, disturbing mythology, and exploration of human desire and suffering cemented it as a cult classic.</p>
-    <img src='imagenes/modal/peliculas/hellraiser1987.png' class='modalImageP' alt='Hellraiser 1987'>
-  </div>
-</div>
+    <p class="narrative-intro">
+      Riding the wave of the late 1970s' gritty realism and the birth of the slasher, the 1980s fully embraced its dark side, becoming a golden age for franchise horror, iconic villains, and groundbreaking practical special effects. Home video boomed, giving these films unprecedented reach and cult status, while audiences craved ever more inventive scares and memorable monsters.
+    </p>
 
-<div id="footer" class="footer">
-  <div class="footer-content">
-    <table>
-      <tr>
-        <th>Nombre</th>
-        <th>ID</th>
-        <th>Carrera</th>
-        <th>Correo</th>
-      </tr>
-      <tr>
-        <td>Maria Jose Arévalo</td>
-        <td>1094044725</td>
-        <td>Jurisprudencia</td>
-        <td>mariaj.arevalo@urosario.edu.co</td>
-      </tr>
-      <tr>
-        <td>Daniela Cortes Rodriguez</td>
-        <td>1095550727</td>
-        <td>Jurisprudencia</td>
-        <td>daniela.cortesro@urosario.edu.co</td>
-      </tr>
-    </table>
-    <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+    <h1>The Slasher Boom and the Masters of Practical Effects</h1>
+    <p>The 1980s was undeniably dominated by the slasher subgenre, with masked killers like Jason Voorhees and Freddy Krueger becoming pop culture icons. This era also celebrated the artistry of practical effects, with makeup artists and effects crews pushing the boundaries of gore and creature design to new, often shocking, heights. Beyond slashers, psychological horror continued to evolve, and body horror reached new, visceral levels, solidifying the decade's reputation for unforgettable and often controversial horror imagery.</p>
+
+    <h2>The Shining (1980)</h2>
+    <p>Stanley Kubrick’s atmospheric adaptation of Stephen King’s novel is a masterclass in psychological horror. Jack Nicholson's descent into madness as Jack Torrance, amplified by the Overlook Hotel's haunting presence and unsettling cinematography, created a slow-burning dread that differed from typical slasher fare. It showcased how horror could be deeply artistic and ambiguous, inviting endless interpretation and cementing its place as a cerebral, yet terrifying, evolution of the haunted house story.</p>
+    <img src='imagenes/modal/peliculas/theshining1980.jpg' class='modalImageP' alt='Jack Nicholson in an iconic scene from The Shining (1980)'>
+
+    <h2>The Thing (1982)</h2>
+    <p>John Carpenter’s sci-fi horror masterpiece, a remake of the 1950s classic, terrified audiences with its themes of paranoia and isolation, but it was Rob Bottin's groundbreaking and grotesque practical creature effects that truly seared it into memory. The shape-shifting alien offered a new kind of unknowable threat, pushing body horror to its limits and influencing countless creature designs and effects artists for decades to follow.</p>
+    <img src='imagenes/modal/peliculas/thething1982.jpg' class='modalImageP' alt='A practical effects creature from John Carpenter The Thing (1982)'>
+
+    <h2>A Nightmare on Elm Street (1984)</h2>
+    <p>Wes Craven ingeniously tapped into the universal vulnerability of sleep, introducing Freddy Krueger, a wisecracking, supernaturally powered killer who stalked victims in their dreams. This surreal premise allowed for wildly imaginative and often bizarre death sequences, setting it apart from more grounded slashers. Freddy's unique persona and bladed glove made him an instant horror icon, highlighting the genre's shift towards villains with distinct personalities.</p>
+    <img src='imagenes/modal/peliculas/nightmareonelmstreet1984.png' class='modalImageP' alt='Freddy Krueger with his bladed glove from A Nightmare on Elm Street (1984)'>
+
+    <h2>Hellraiser (1987)</h2>
+    <p>Clive Barker’s directorial debut, based on his own novella, introduced the Cenobites – otherworldly beings who explored the terrifying nexus of pain and pleasure. Pinhead, their leader, became another iconic 80s horror figure. "Hellraiser" brought a more mature, sadomasochistic, and philosophical dimension to body horror, delving into forbidden desires and a darker, more artistic form of grotesquerie that expanded the genre's thematic palette.</p>
+    <img src='imagenes/modal/peliculas/hellraiser1987.png' class='modalImageP' alt='Pinhead, a Cenobite from Hellraiser (1987)'>
+
+    <p class="narrative-conclusion">
+      The 1980s solidified horror's place in mainstream pop culture, largely through its unforgettable slasher villains and the spectacle of its practical effects. While sometimes criticized for excess, the decade also produced sophisticated psychological thrillers and pushed creative boundaries, leaving a legacy of iconic characters and franchises that continue to influence horror today, setting the stage for a more self-aware and deconstructive phase in the 1990s.
+    </p>
+    <div class="decade-navigation">
+      <a href="1970s.html" class="decade-nav-button prev">← Previous Decade: 1970s</a>
+      <a href="1990s.html" class="decade-nav-button next">Next Decade: 1990s Horror →</a>
+    </div>
   </div>
 </div>
+<div id="footer" class="footer"> <div class="footer-content"> <table><tr><th>Nombre</th><th>ID</th><th>Carrera</th><th>Correo</th></tr><tr><td>Maria Jose Arévalo</td><td>1094044725</td><td>Jurisprudencia</td><td>mariaj.arevalo@urosario.edu.co</td></tr><tr><td>Daniela Cortes Rodriguez</td><td>1095550727</td><td>Jurisprudencia</td><td>daniela.cortesro@urosario.edu.co</td></tr></table> <img src="imagenes/logo2.png" alt="Museum Sub-Logo" class="footer-logo"> </div> </div>
 <script src="script.js"></script>
 </body>
 </html>

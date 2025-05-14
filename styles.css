@@ -467,3 +467,267 @@ p {
     max-width: 100px; /* Ajustar el tamaño del logo */
     height: auto; /* Mantener la proporción */
 }
+
+.quiz-popup-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top - higher than your existing modal if needed */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    animation: fadeInQuizModal 0.5s; /* Simple fade-in */
+}
+
+@keyframes fadeInQuizModal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.quiz-popup-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 550px; /* Max width */
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+.quiz-popup-close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.6; /* Adjust for better vertical alignment */
+}
+
+.quiz-popup-close-btn:hover,
+.quiz-popup-close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.quiz-popup-modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#popupQuizQuestionArea .quiz-question {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+#popupQuizQuestionArea .quiz-answers label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#popupQuizQuestionArea .quiz-answers label:hover {
+    background-color: #e9e9e9;
+}
+
+#popupQuizQuestionArea .quiz-answers input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#submitPopupQuizAnswer {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px 25px;
+    background-color: #9a0000; /* Theme color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+#submitPopupQuizAnswer:hover {
+    background-color: #700000;
+}
+
+#submitPopupQuizAnswer:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#popupQuizFeedbackArea {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#popupQuizFeedbackArea.correct {
+    background-color: #d4edda; /* Light green */
+    color: #155724;
+}
+
+#popupQuizFeedbackArea.incorrect {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24;
+}
+
+.decade-navigation {
+    display: flex;
+    justify-content: space-between; /* Puts Prev on left, Next on right */
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.decade-nav-button {
+    display: inline-block;
+    background-color: #9a0000; /* A neutral, distinct color */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.decade-nav-button:hover {
+    background-color: #333;
+}
+
+.decade-nav-button.prev {
+    /* Specific styles if needed */
+}
+
+.decade-nav-button.next {
+    /* Specific styles if needed */
+}
+
+/* Hide button if it has the 'hidden' class (for first/last page) */
+.decade-nav-button.hidden {
+    display: none;
+}
+
+.interactive-quiz-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #9a0000;
+}
+
+.interactive-quiz-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.in-page-quiz-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.in-page-quiz-container .quiz-question {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.in-page-quiz-container .quiz-answers label {
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.in-page-quiz-container .quiz-answers label:hover {
+    background-color: #e9e9e9;
+    border-color: #ccc;
+}
+
+.in-page-quiz-container .quiz-answers input[type="radio"] {
+    margin-right: 10px;
+}
+
+.in-page-quiz-submit {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 12px 30px;
+    background-color: #0056b3; /* Different color to distinguish from main theme red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.in-page-quiz-submit:hover {
+    background-color: #004494;
+}
+
+.in-page-quiz-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    border: 1px solid #3333;
+    text-align: center;
+}
+
+.in-page-quiz-result h3 { /* For the result title */
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.in-page-quiz-result p { /* For the result description */
+    font-size: 1rem;
+    color: #333;
+}
+
+.start-quiz-button {
+    display: block;
+    margin: 20px auto 30px auto; /* Centered, with some margin */
+    padding: 15px 30px;
+    background-color: #8b0000; /* A slightly different, enticing red */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-quiz-button:hover {
+    background-color: #6a0000;
+    transform: translateY(-2px);
+}
+
+.quiz-content-area {
+    /* Optional: add some padding or margin if needed when it becomes visible */
+    margin-top: 15px;
+}

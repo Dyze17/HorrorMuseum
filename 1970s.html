@@ -4,152 +4,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horror in the 1970s - Horror Cinema Museum</title>
+  <title>Horror in the 1970s - A Decade of Revolution - Horror Cinema Museum</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Additional styles specific to decade pages */
+    /* decade-hero, decade-title-main, etc., styles as defined before */
     .decade-hero {
-      width: 100%;
-      height: 400px;
-      /* Image from modalContent in script.js */
-      background-image: url('imagenes/modal/1970.png');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-bottom: 40px;
+      width: 100%; height: 400px; background-image: url('imagenes/modal/1970.png');
+      background-size: cover; background-position: center; display: flex;
+      align-items: center; justify-content: center; position: relative; margin-bottom: 40px;
     }
-
     .decade-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
     }
-
     .decade-title-main {
-      color: #fff;
-      font-size: 4rem;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      color: #fff; font-size: 3.5rem; text-align: center; position: relative;
+      z-index: 1; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     }
-
-    .decade-content-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .decade-detail-content h1 {
-      font-size: 2.2rem;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #9a0000;
-      padding-bottom: 10px;
-    }
-
-    .decade-detail-content h2 {
-      font-size: 1.8rem;
-      color: #555;
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
-
-    .decade-detail-content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      color: #444;
-    }
-
+    .decade-content-wrapper { width: 80%; margin: 0 auto; padding: 20px; }
     .back-button {
-      display: inline-block;
-      background-color: #9a0000;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-bottom: 30px;
-      font-weight: bold;
+      display: inline-block; background-color: #9a0000; color: white; padding: 12px 24px;
+      text-decoration: none; border-radius: 5px; margin-bottom: 30px; font-weight: bold;
       transition: background-color 0.3s ease;
     }
-
-    .back-button:hover {
-      background-color: #700000;
-    }
+    .back-button:hover { background-color: #700000; }
+    .decade-detail-content h1 { font-size: 2.2rem; color: #333; margin-top:0; margin-bottom: 15px; border-bottom: 2px solid #9a0000; padding-bottom: 10px;}
+    .decade-detail-content h2 { font-size: 1.8rem; color: #555; margin-top: 25px; margin-bottom: 10px;}
+    .decade-detail-content p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; color: #444;}
+    .narrative-intro, .narrative-conclusion { font-style: italic; color: #555; margin-bottom:25px; padding-bottom:15px; border-bottom: 1px dashed #eee;}
+    .narrative-conclusion {margin-top: 30px; border-top: 1px dashed #eee; border-bottom: none;}
+    /* Ensure .decade-navigation styles are in styles.css */
   </style>
 </head>
 <body>
-<div class="top-bar">
-  <div class="top-bar-content">
-    <a href="about.html">About</a>
-    <a href="#donate">Donate</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+<div class="top-bar"> <div class="top-bar-content"> <a href="about.html">About</a> <a href="#donate">Donate</a> <a href="contact.html">Contact</a> </div> </div>
+<a href="index.html"> <img src="imagenes/logomuseo.png" alt="Horror Cinema Museum Logo" class="logo"> </a>
 
-<a href="index.html">
-  <img src="imagenes/logomuseo.png" alt="Logo" class="logo">
-</a>
-
-<div class="decade-hero">
-  <h1 class="decade-title-main">Horror in the 1970s</h1>
-</div>
+<div class="decade-hero"> <h1 class="decade-title-main">Horror in the 1970s: A Decade of Revolution</h1> </div>
 
 <div class="decade-content-wrapper">
-  <a href="index.html" class="back-button">← Back to Home</a>
-
+  <a href="index.html" class="back-button">← Back to Museum Home</a>
   <div class="decade-detail-content">
-    <h1>1970s: The Revolution of Horror</h1>
-    <p>The 1970s marked a turning point in horror, moving away from classic monsters toward psychological and visceral terror. Filmmakers pushed boundaries with intense violence, disturbing themes, and realistic storytelling.</p>
-    <h2>The Exorcist (1973)</h2>
-    <p>One of the scariest films ever made, The Exorcist terrified audiences with its depiction of demonic possession. Its shocking imagery, psychological horror, and religious themes made it a cultural phenomenon.</p>
-    <img src='imagenes/modal/peliculas/exorcist1973.jpg' class='modalImageP' alt='The Exorcist 1973'>
-    <h2>The Texas Chain Saw Massacre (1974)</h2>
-    <p>Tobe Hooper’s raw, documentary-style film introduced Leatherface, a chainsaw-wielding killer, and redefined horror with its unrelenting intensity. Its gritty realism, disturbing atmosphere, and relentless brutality set a new standard for terror, influencing countless films in the genre.</p>
-    <img src='imagenes/modal/peliculas/TheTexasChainSawMassacre1974.jpg' class='modalImageP' alt='The Texas Chain Saw Massacre 1974'>
-    <h2>Halloween (1978)</h2>
-    <p>John Carpenter’s slasher masterpiece introduced Michael Myers, a seemingly unstoppable killer stalking teenagers. The film’s atmospheric tension and eerie soundtrack laid the groundwork for the slasher genre.</p>
-    <img src='imagenes/modal/peliculas/halloween1978.png' class='modalImageP' alt='Halloween 1978'>
-    <h2>Alien (1979)</h2>
-    <p>Combining science fiction with horror, Alien introduced one of the most terrifying creatures in cinema history: the Xenomorph. The film’s claustrophobic setting and slow-building tension redefined the genre.</p>
-    <img src='imagenes/modal/peliculas/alien1979.jpeg' class='modalImageP' alt='Alien 1979'>
-  </div>
-</div>
+    <p class="narrative-intro">
+      As the societal optimism of the early post-war years gave way to widespread disillusionment, economic instability, and social upheaval, horror cinema in the 1970s underwent a seismic shift. The genre shed much of its earlier restraint, embracing a grittier, more visceral, and often deeply unsettling reflection of a turbulent world. The monsters were no longer just from outer space or ancient tombs; they were emerging from within society, and even within the self.
+    </p>
 
-<div id="footer" class="footer">
-  <div class="footer-content">
-    <table>
-      <tr>
-        <th>Nombre</th>
-        <th>ID</th>
-        <th>Carrera</th>
-        <th>Correo</th>
-      </tr>
-      <tr>
-        <td>Maria Jose Arévalo</td>
-        <td>1094044725</td>
-        <td>Jurisprudencia</td>
-        <td>mariaj.arevalo@urosario.edu.co</td>
-      </tr>
-      <tr>
-        <td>Daniela Cortes Rodriguez</td>
-        <td>1095550727</td>
-        <td>Jurisprudencia</td>
-        <td>daniela.cortesro@urosario.edu.co</td>
-      </tr>
-    </table>
-    <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+    <h1>The New Wave: Supernatural, Slasher, and Sci-Fi Nightmares</h1>
+    <p>The 1970s marked a true turning point, often called a revolution in horror. Filmmakers, less constrained by censorship and more willing to explore darker themes, moved away from classic monsters toward psychological depth and shocking, visceral terror. This decade saw the rise of demonic possession films that tapped into spiritual anxieties, the birth of the modern slasher subgenre with its relatable suburban fears, and sci-fi horror that took terror to new, isolated frontiers. Realism, intense violence, and challenging narratives became hallmarks of this transformative era.</p>
+
+    <h2>The Exorcist (1973)</h2>
+    <p>William Friedkin's "The Exorcist" wasn't just a film; it was a cultural phenomenon that terrified audiences worldwide. Its unflinching depiction of demonic possession, combined with profound questions of faith and the nature of evil, pushed the boundaries of mainstream horror. The film’s shocking imagery and intense psychological drama had a lasting impact, proving horror could be both commercially successful and critically provocative, opening doors for more adult-oriented horror.</p>
+    <img src='imagenes/modal/peliculas/exorcist1973.jpg' class='modalImageP' alt='A chilling scene from The Exorcist (1973)'>
+
+    <h2>The Texas Chain Saw Massacre (1974)</h2>
+    <p>Tobe Hooper’s raw, pseudo-documentary style lent a terrifying verisimilitude to this tale of a cannibalistic family. While surprisingly less gory than its reputation suggests, its unrelenting intensity, disturbing atmosphere, and the iconic Leatherface redefined cinematic brutality. It demonstrated the power of low-budget filmmaking to create deeply unsettling horror that reflected a sense of societal breakdown and the darkness lurking in rural America.</p>
+    <img src='imagenes/modal/peliculas/TheTexasChainSawMassacre1974.jpg' class='modalImageP' alt='Leatherface with his chainsaw from The Texas Chain Saw Massacre (1974)'>
+
+    <h2>Halloween (1978)</h2>
+    <p>John Carpenter’s independent masterpiece introduced Michael Myers, a seemingly motiveless and unstoppable killer, effectively launching the slasher subgenre into mainstream consciousness. Its use of Steadicam, POV shots, and an iconic synth score created an atmosphere of relentless suburban dread. "Halloween" codified many slasher tropes, including the "final girl," and its commercial success paved the way for a wave of similar films in the following decade.</p>
+    <img src='imagenes/modal/peliculas/halloween1978.png' class='modalImageP' alt='The iconic masked figure of Michael Myers from Halloween (1978)'>
+
+    <h2>Alien (1979)</h2>
+    <p>Ridley Scott brilliantly merged science fiction with "haunted house" horror in "Alien." H.R. Giger's nightmarish Xenomorph design and the film’s claustrophobic, industrial setting created a terrifying vision of cosmic dread. It not only introduced one of cinema's most iconic monsters but also a groundbreaking action heroine in Ripley, setting a new standard for creature features and sci-fi horror's potential for suspense and adult themes.</p>
+    <img src='imagenes/modal/peliculas/alien1979.jpeg' class='modalImageP' alt='The terrifying Xenomorph from Alien (1979)'>
+
+    <p class="narrative-conclusion">
+      The 1970s was a truly revolutionary period for horror, tearing down old conventions and building new nightmares that resonated with contemporary anxieties. The decade's willingness to explore graphic violence, psychological depths, and uncomfortable social truths redefined what horror could be, setting the stage for the subgenre booms and iconic villains that would dominate the 1980s.
+    </p>
+    <div class="decade-navigation">
+      <a href="1950s.html" class="decade-nav-button prev">← Previous Decade: 1950s</a>
+      <a href="1980s.html" class="decade-nav-button next">Next Decade: 1980s Horror →</a>
+    </div>
   </div>
 </div>
+<div id="footer" class="footer"> <div class="footer-content"> <table><tr><th>Nombre</th><th>ID</th><th>Carrera</th><th>Correo</th></tr><tr><td>Maria Jose Arévalo</td><td>1094044725</td><td>Jurisprudencia</td><td>mariaj.arevalo@urosario.edu.co</td></tr><tr><td>Daniela Cortes Rodriguez</td><td>1095550727</td><td>Jurisprudencia</td><td>daniela.cortesro@urosario.edu.co</td></tr></table> <img src="imagenes/logo2.png" alt="Museum Sub-Logo" class="footer-logo"> </div> </div>
 <script src="script.js"></script>
 </body>
 </html>

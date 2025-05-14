@@ -170,35 +170,47 @@
     <h2>Iconic Slasher Horror Films</h2>
     <div class="movie-examples">
       <div class="movie-card">
-        <img src="imagenes/modal/peliculas/halloween1978.png" alt="Halloween" class="movie-image"> <div class="movie-info">
-        <h3>Halloween (1978)</h3>
-        <p>Director: John Carpenter</p>
-        <p>A masked killer, Michael Myers, escapes from a sanitarium and stalks a group of teenagers on Halloween night. Often cited as the film that launched the slasher boom.</p>
-      </div>
-      </div>
-
-      <div class="movie-card">
-        <img src="imagenes/modal/peliculas/fridaythe13th1980.jpg" alt="Friday the 13th" class="movie-image"> <div class="movie-info">
-        <h3>Friday the 13th (1980)</h3>
-        <p>Director: Sean S. Cunningham</p>
-        <p>Camp counselors are stalked and murdered by an unknown assailant at a remote summer camp with a dark past. Famous for its iconic killer, Jason Voorhees (though not the killer in this first film).</p>
-      </div>
+        <img src="imagenes/modal/peliculas/halloween1978.png" alt="Michael Myers, the masked killer, from Halloween (1978)" class="movie-image">
+        <div class="movie-info">
+          <h3>Halloween (1978)</h3>
+          <p>Director: John Carpenter</p>
+          <p>
+            <strong>Curator's Note:</strong> Often credited with popularizing the slasher subgenre, "Halloween" introduced the chillingly implacable Michael Myers. A fun fact: the iconic Myers mask was a modified Captain Kirk (William Shatner) mask painted white, chosen for its eerily blank expression and costing only $1.98!
+          </p>
+        </div>
       </div>
 
       <div class="movie-card">
-        <img src="imagenes/modal/peliculas/nightmareonelmstreet1984.png" alt="A Nightmare on Elm Street" class="movie-image"> <div class="movie-info">
-        <h3>A Nightmare on Elm Street (1984)</h3>
-        <p>Director: Wes Craven</p>
-        <p>A group of teenagers is stalked and killed in their dreams by the disfigured Freddy Krueger, a vengeful spirit of a child murderer.</p>
-      </div>
+        <img src="imagenes/modal/peliculas/fridaythe13th1980.jpg" alt="A tense scene from the original Friday the 13th (1980) at Camp Crystal Lake" class="movie-image">
+        <div class="movie-info">
+          <h3>Friday the 13th (1980)</h3>
+          <p>Director: Sean S. Cunningham</p>
+          <p>
+            <strong>Curator's Note:</strong> This film capitalized on the success of "Halloween" and became a massive franchise. While Jason Voorhees is the series icon, spoiler alert for newcomers: he's not the killer in this first film! The movie's effective use of practical gore effects by Tom Savini set a new bar for the genre.
+          </p>
+        </div>
       </div>
 
       <div class="movie-card">
-        <img src="imagenes/modal/peliculas/scream1996.png" alt="Scream" class="movie-image"> <div class="movie-info">
-        <h3>Scream (1996)</h3>
-        <p>Director: Wes Craven</p>
-        <p>A year after the murder of her mother, a teenage girl is terrorized by a new killer, who uses horror films as part of a deadly game. Known for its meta-commentary on slasher conventions.</p>
+        <img src="imagenes/modal/peliculas/nightmareonelmstreet1984.png" alt="Freddy Krueger with his bladed glove from A Nightmare on Elm Street (1984)" class="movie-image">
+        <div class="movie-info">
+          <h3>A Nightmare on Elm Street (1984)</h3>
+          <p>Director: Wes Craven</p>
+          <p>
+            <strong>Curator's Note:</strong> Wes Craven ingeniously blended the slasher formula with surreal, dream-based horror, creating Freddy Krueger – a villain who could kill you in your sleep. The concept was inspired by real-life accounts of people dying in their sleep after experiencing terrifying nightmares.
+          </p>
+        </div>
       </div>
+
+      <div class="movie-card">
+        <img src="imagenes/modal/peliculas/scream1996.png" alt="The Ghostface killer from the movie Scream (1996)" class="movie-image">
+        <div class="movie-info">
+          <h3>Scream (1996)</h3>
+          <p>Director: Wes Craven</p>
+          <p>
+            <strong>Curator's Note:</strong> "Scream" revitalized the slasher genre in the 90s with its witty, self-referential humor and genuine scares. The characters famously discussed the "rules" of surviving a horror movie, even as they were living one. The Ghostface mask was an off-the-shelf Halloween costume find, not originally designed for the film!
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -206,6 +218,20 @@
   <div class="genre-section">
     <h2>Slasher Horror's Influence</h2>
     <p>Slasher films have had a significant impact on popular culture, creating some of horror's most recognizable villains and establishing tropes that are still referenced and subverted today. The genre often explores themes of survival, trauma, and the consequences of past actions, resonating with audiences through its suspenseful narratives and memorable antagonists. While sometimes criticized for its violence, particularly against women, the genre has also been noted for its strong "Final Girl" characters and its ability to reflect societal anxieties. More recent slashers have sometimes adopted feminist perspectives, showing the genre's capacity to evolve.</p>
+  </div>
+
+  <div class="genre-section interactive-quiz-section">
+    <h2>Interactive Corner: Could You Survive a Slasher Movie?</h2>
+
+    <button id="startSlasherQuizBtn" class="start-quiz-button">Test Your Survival Skills!</button>
+
+    <div id="slasherQuizArea" class="quiz-content-area" style="display:none;">
+      <div id="slasherQuizContainer" class="in-page-quiz-container">
+      </div>
+      <button id="submitSlasherQuiz" class="in-page-quiz-submit">See My Fate!</button>
+      <div id="slasherQuizResult" class="in-page-quiz-result" style="display:none;">
+      </div>
+    </div>
   </div>
 </div>
 
@@ -232,6 +258,16 @@
       </tr>
     </table>
     <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+  </div>
+</div>
+<div id="quizPopupModal" class="quiz-popup-modal" style="display:none;">
+  <div class="quiz-popup-modal-content">
+    <span class="quiz-popup-close-btn">&times;</span>
+    <h2>Quick Horror Trivia!</h2>
+    <div id="popupQuizQuestionArea">
+    </div>
+    <button id="submitPopupQuizAnswer">Submit</button>
+    <div id="popupQuizFeedbackArea"></div>
   </div>
 </div>
 <script src="script.js"></script>
