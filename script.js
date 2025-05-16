@@ -1002,6 +1002,64 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 // --- END IN-PAGE GENRE QUIZ FUNCTIONALITY ---
 
+    // --- MOVIE CARD IMAGE MODAL FUNCTIONALITY ---
+    const imageDisplayModal = document.getElementById('movieCardImageModal');
+    const modalMovieImageElement = document.getElementById('modalMovieImage');
+
+    // Check if the primary modal elements exist on the current page
+    if (imageDisplayModal && modalMovieImageElement) {
+        const closeImageDisplayModalButton = imageDisplayModal.querySelector('.image-display-modal-close');
+        const movieCards = document.querySelectorAll('.movie-card'); // Select all movie cards
+
+        movieCards.forEach(card => {
+            card.style.cursor = 'pointer'; // Add a visual cue that cards are clickable
+            card.addEventListener('click', function(event) {
+                // Prevent click from triggering if it's on an interactive element within the card (if any)
+                if (event.target.closest('a, button')) { // Example: ignore clicks on links/buttons inside a card
+                    return;
+                }
+
+                const imageInsideCard = this.querySelector('.movie-image'); // Get the image with class 'movie-image'
+                if (imageInsideCard && imageInsideCard.src) {
+                    modalMovieImageElement.src = imageInsideCard.src;
+                    modalMovieImageElement.alt = imageInsideCard.alt || "Enlarged movie image"; // Use card image's alt text
+                    imageDisplayModal.style.display = 'block';
+                    document.body.classList.add('image-modal-active'); // Prevent body scroll
+                } else {
+                    console.warn("Could not find .movie-image or its src in the clicked card:", this);
+                }
+            });
+        });
+
+        // Function to close the image modal
+        const closeImageModal = function() {
+            imageDisplayModal.style.display = 'none';
+            modalMovieImageElement.src = ""; // Clear image src to prevent brief display of old image
+            document.body.classList.remove('image-modal-active'); // Re-enable body scroll
+        }
+
+        // Close modal when the close button (span with &times;) is clicked
+        if (closeImageDisplayModalButton) {
+            closeImageDisplayModalButton.addEventListener('click', closeImageModal);
+        }
+
+        // Close modal when clicking outside the modal image (on the overlay)
+        imageDisplayModal.addEventListener('click', function(event) {
+            // Check if the click is directly on the modal backdrop itself, not on the content/image
+            if (event.target === imageDisplayModal) {
+                closeImageModal();
+            }
+        });
+
+        // Close modal with the Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && imageDisplayModal.style.display === 'block') {
+                closeImageModal();
+            }
+        });
+    }
+    // --- END MOVIE CARD IMAGE MODAL FUNCTIONALITY ---
+
 
 // --- SCRIPT TO CLEAR QUIZ-RELATED LOCALSTORAGE ON PAGE UNLOAD ---
 window.addEventListener('beforeunload', function (e) {

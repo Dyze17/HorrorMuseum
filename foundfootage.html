@@ -6,121 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Found Footage Horror - Horror Cinema Museum</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Additional styles specific to genre pages */
-    .genre-hero {
-      width: 100%;
-      height: 400px;
-      background-image: url('imagenes/grid/foundfootage.jpg'); /* Update with actual image */
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      margin-bottom: 40px;
-    }
-
-    .genre-hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .genre-title {
-      color: #fff;
-      font-size: 4rem;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-
-    .genre-content {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .genre-section {
-      margin-bottom: 60px;
-    }
-
-    .genre-section h2 {
-      font-size: 2rem;
-      color: #333;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #9a0000;
-      padding-bottom: 10px;
-    }
-
-    .genre-section p, .genre-section ul {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .movie-examples {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .movie-card {
-      border: 1px solid #333;
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .movie-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .movie-image {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-
-    .movie-info {
-      padding: 15px;
-      background-color: #1a1a1a;
-    }
-
-    .movie-info h3 {
-      color: #fff;
-      margin-bottom: 5px;
-    }
-
-    .movie-info p {
-      color: #ccc;
-      font-size: 0.9rem;
-      margin-bottom: 5px;
-    }
-
-    .back-button {
-      display: inline-block;
-      background-color: #9a0000;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-bottom: 30px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .back-button:hover {
-      background-color: #700000;
-    }
-  </style>
 </head>
 <body>
 <div class="top-bar">
@@ -166,7 +51,7 @@
     <h2>Iconic Found Footage Horror Films</h2>
     <div class="movie-examples">
       <div class="movie-card">
-        <img src="imagenes/modal/peliculas/blairwitch1999.png" alt="A distinctive stick figure symbol from The Blair Witch Project (1999)" class="movie-image">
+        <img src="imagenes/modal/peliculas/blairwitch.png" alt="A distinctive stick figure symbol from The Blair Witch Project (1999)" class="movie-image">
         <div class="movie-info">
           <h3>The Blair Witch Project (1999)</h3>
           <p>Directors: Daniel Myrick & Eduardo Sánchez</p>
@@ -177,7 +62,7 @@
       </div>
 
       <div class="movie-card">
-        <img src="imagenes/modal/peliculas/paranormalactivity2007.jpg" alt="A still from Paranormal Activity (2007) showing a bedroom at night" class="movie-image">
+        <img src="imagenes/modal/peliculas/paranormalactivity.png" alt="A still from Paranormal Activity (2007) showing a bedroom at night" class="movie-image">
         <div class="movie-info">
           <h3>Paranormal Activity (2007)</h3>
           <p>Director: Oren Peli</p>
@@ -188,7 +73,7 @@
       </div>
 
       <div class="movie-card">
-        <img src="imagenes/modal/peliculas/rec2007.jpg" alt="A terrifying scene from the Spanish found footage film [REC] (2007)" class="movie-image">
+        <img src="imagenes/modal/peliculas/rec.png" alt="A terrifying scene from the Spanish found footage film [REC] (2007)" class="movie-image">
         <div class="movie-info">
           <h3>[REC] (2007)</h3>
           <p>Directors: Jaume Balagueró & Paco Plaza</p>
@@ -199,7 +84,7 @@
       </div>
 
       <div class="movie-card">
-        <img src="imagenes/modal/peliculas/cloverfield2008.jpg" alt="A giant monster attacking New York City in Cloverfield (2008)" class="movie-image">
+        <img src="imagenes/modal/peliculas/cloverfield.png" alt="A giant monster attacking New York City in Cloverfield (2008)" class="movie-image">
         <div class="movie-info">
           <h3>Cloverfield (2008)</h3>
           <p>Director: Matt Reeves</p>
@@ -250,6 +135,12 @@
       </tr>
     </table>
     <img src="imagenes/logo2.png" alt="Logo Footer" class="footer-logo">
+  </div>
+</div>
+<div id="movieCardImageModal" class="image-display-modal">
+  <div class="image-display-modal-content">
+    <span class="image-display-modal-close">&times;</span>
+    <img id="modalMovieImage" src="" alt="Movie Image Preview">
   </div>
 </div>
 <script src="script.js"></script>

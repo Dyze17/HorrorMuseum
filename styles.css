@@ -731,3 +731,184 @@ p {
     /* Optional: add some padding or margin if needed when it becomes visible */
     margin-top: 15px;
 }
+
+.genre-hero {
+    width: 100%;
+    height: 400px;
+    background-image: url('imagenes/grid/foundfootage.jpg'); /* Update with actual image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.genre-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.genre-title {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.genre-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.genre-section {
+    margin-bottom: 60px;
+}
+
+.genre-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9a0000;
+    padding-bottom: 10px;
+}
+
+.genre-section p, .genre-section ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.movie-examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.movie-card {
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+    background-color: #1a1a1a;
+}
+
+.movie-info h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.movie-info p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #9a0000;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #700000;
+}
+
+.image-display-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Adjust if it conflicts with other modals, should be high */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed for very tall images, though unlikely with max-width */
+    background-color: rgba(0, 0, 0, 0.85); /* Dark semi-transparent background */
+    animation: fadeInImageModal 0.4s ease-out;
+}
+
+@keyframes fadeInImageModal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.image-display-modal-content {
+    margin: auto; /* Centering trick for the content block */
+    display: block;
+    width: auto; /* Width will be determined by the image content up to max-width */
+    max-width: 85%; /* Max width of the modal content area relative to viewport */
+    max-height: 85vh; /* Max height of the modal content area relative to viewport height */
+    position: relative; /* For positioning the close button absolutely within this */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: scaleInImageModal 0.4s ease-out;
+}
+
+@keyframes scaleInImageModal {
+    from { opacity: 0; transform: translateY(-50%) scale(0.8); }
+    to { opacity: 1; transform: translateY(-50%) scale(1); }
+}
+
+#modalMovieImage {
+    display: block;
+    max-width: 100%; /* Image will not exceed the width of .image-display-modal-content */
+    max-height: 80vh; /* Image will not exceed this height, allowing space for close button etc. */
+    margin: 0 auto; /* Center the image if its aspect ratio makes it narrower than max-width */
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.image-display-modal-close {
+    color: #f1f1f1; /* Light color for better visibility on dark overlay */
+    position: absolute;
+    top: -10px;  /* Position slightly above the content area */
+    right: 5px;   /* Position to the right */
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1;
+    transition: 0.3s ease;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Slight shadow for better readability */
+}
+
+.image-display-modal-close:hover,
+.image-display-modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Prevent body scroll when this specific modal is active */
+body.image-modal-active {
+    overflow: hidden;
+}
