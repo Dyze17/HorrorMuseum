@@ -166,6 +166,9 @@
     </div>
 </div>
 
+<div style="text-align: center;"> <button id="mainHorrorQuizButton" class="main-horror-quiz-button">Are you ready to test your knowledge in Horror Movies?</button>
+</div>
+
 <!-- Footer -->
 <div id="footer" class="footer">
     <div class="footer-content">
@@ -200,6 +203,71 @@
         </div>
         <button id="submitPopupQuizAnswer">Submit</button>
         <div id="popupQuizFeedbackArea"></div>
+    </div>
+</div>
+
+<div id="mainHorrorQuizModal" class="main-horror-quiz-modal">
+    <div class="main-horror-quiz-modal-content">
+        <span class="main-horror-quiz-modal-close">&times;</span>
+        <h2>Horror Movie Knowledge Test!</h2>
+
+        <div id="horrorQuizQuestionContainer">
+            <div class="horror-quiz-item" data-question-id="1">
+                <p class="horror-quiz-question-text">What franchise is this creature from?</p>
+                <div class="horror-quiz-3d-object-container" id="quiz3dObject1">
+                    <div class="sketchfab-embed-wrapper"> <iframe title="ALIEN" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/29b88bd5e48145d59b7a248e9f9608a8/embed?dnt=1"> </iframe> </div>
+                </div>
+                <div class="horror-quiz-answer-options">
+                    <label><input type="radio" name="q1_answer" value="a"> A) Friday the 13th</label>
+                    <label><input type="radio" name="q1_answer" value="b"> B) The Texas Chain Saw Massacre</label>
+                    <label><input type="radio" name="q1_answer" value="c"> C) Alien</label>
+                    <label><input type="radio" name="q1_answer" value="d"> D) A Nightmare on Elm Street</label>
+                </div>
+            </div>
+
+            <div class="horror-quiz-item" data-question-id="2">
+                <p class="horror-quiz-question-text">Which iconic horror character is associated with this item?</p>
+                <div class="horror-quiz-3d-object-container" id="quiz3dObject2">
+                    <div class="sketchfab-embed-wrapper"> <iframe title="Friday the 13th hockey mask" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/1a5d890acd574575aca820addb94a781/embed"> </iframe> </div>
+                </div>
+                <div class="horror-quiz-answer-options">
+                    <label><input type="radio" name="q2_answer" value="a"> A) Michael Myers</label>
+                    <label><input type="radio" name="q2_answer" value="b"> B) Jason Voorhees</label>
+                    <label><input type="radio" name="q2_answer" value="c"> C) Freddy Krueger</label>
+                    <label><input type="radio" name="q2_answer" value="d"> D) Leatherface</label>
+                </div>
+            </div>
+
+            <div class="horror-quiz-item" data-question-id="3">
+                <p class="horror-quiz-question-text">Which iconic beast is associated with this building?</p>
+                <div class="horror-quiz-3d-object-container" id="quiz3dObject3">
+                    <div class="sketchfab-embed-wrapper"> <iframe title="The Empire State Building" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/1e6355c69f4f459dbbcbfbf78c481680/embed"> </iframe> </div>
+                </div>
+                <div class="horror-quiz-answer-options">
+                    <label><input type="radio" name="q3_answer" value="a"> A) Godzilla</label>
+                    <label><input type="radio" name="q3_answer" value="b"> B) King Ghidorah</label>
+                    <label><input type="radio" name="q3_answer" value="c"> C) The thing</label>
+                    <label><input type="radio" name="q3_answer" value="d"> D) King Kong</label>
+                </div>
+            </div>
+
+            <div class="horror-quiz-item" data-question-id="4">
+                <p class="horror-quiz-question-text">Where do this ghost come from?</p>
+                <div class="horror-quiz-3d-object-container" id="quiz3dObject4">
+                    <div class="sketchfab-embed-wrapper"> <iframe title="Samara (The Ring)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/57ab1a21d63744dfab12c54c7d139ddb/embed"> </iframe> </div>
+                </div>
+                <div class="horror-quiz-answer-options">
+                    <label><input type="radio" name="q4_answer" value="a"> A) A cursed videotape</label>
+                    <label><input type="radio" name="q4_answer" value="b"> B) A water well</label>
+                    <label><input type="radio" name="q4_answer" value="c"> C) The shadows</label>
+                    <label><input type="radio" name="q4_answer" value="d"> D) A cursed book</label>
+                </div>
+            </div>
+        </div>
+
+        <button id="submitMainHorrorQuizButton" class="submit-main-horror-quiz">Submit Your Answers</button>
+        <div id="mainHorrorQuizResultArea" class="main-horror-quiz-result-area" style="display:none;">
+        </div>
     </div>
 </div>
 <script src="script.js"></script>

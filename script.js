@@ -1060,6 +1060,156 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // --- END MOVIE CARD IMAGE MODAL FUNCTIONALITY ---
 
+    // --- TIMESTAMP PAGE VISIT TRACKING ---
+    const currentPagePath = window.location.pathname.toLowerCase(); // Get current page path
+
+    // Define the keys for your timestamp pages in SessionStorage
+    const timestampPageKeys = {
+        '1930s.html': 'visited_1930s',
+        '1950s.html': 'visited_1950s',
+        '1970s.html': 'visited_1970s',
+        '1980s.html': 'visited_1980s',
+        '1990s.html': 'visited_1990s',
+        '2000s.html': 'visited_2000s',
+        '2010s.html': 'visited_2010s',
+        '2020s.html': 'visited_2020s'
+    };
+
+    // Mark current timestamp page as visited
+    for (const pageFile in timestampPageKeys) {
+        if (currentPagePath.includes(pageFile)) {
+            sessionStorage.setItem(timestampPageKeys[pageFile], 'true');
+            // console.log(`Marked ${pageFile} as visited.`); // For testing
+            break;
+        }
+    }
+
+    // --- MAIN KNOWLEDGE QUIZ BUTTON REVEAL LOGIC (for index.html) ---
+    const mainQuizButton = document.getElementById('mainHorrorQuizButton'); // ID for the new button
+
+    function checkAndRevealMainQuizButton() {
+        if (!mainQuizButton) return; // Only proceed if the button is on the current page (index.html)
+
+        const allRequiredPages = Object.values(timestampPageKeys);
+        let allVisited = true;
+        for (const pageKey of allRequiredPages) {
+            if (sessionStorage.getItem(pageKey) !== 'true') {
+                allVisited = false;
+                break;
+            }
+        }
+
+        if (allVisited) {
+            mainQuizButton.style.display = 'block'; // Or 'inline-block', 'flex' etc. based on your layout
+            // console.log("All timestamp pages visited. Showing main quiz button."); // For testing
+        } else {
+            mainQuizButton.style.display = 'none';
+            // console.log("Not all timestamp pages visited yet."); // For testing
+        }
+    }
+
+    // If we are on index.html (or any page where this button might exist), check conditions
+    if (mainQuizButton) {
+        checkAndRevealMainQuizButton();
+    }
+
+    // --- MAIN HORROR KNOWLEDGE QUIZ MODAL FUNCTIONALITY (on index.html) ---
+    const mainHorrorQuizModal = document.getElementById('mainHorrorQuizModal');
+    // The mainHorrorQuizButton was already declared in the button reveal logic.
+
+    if (mainHorrorQuizButton && mainHorrorQuizModal) { // Check if on index.html with these elements
+        const closeMainHorrorQuizButton = mainHorrorQuizModal.querySelector('.main-horror-quiz-modal-close');
+        const submitMainHorrorQuizBtn = document.getElementById('submitMainHorrorQuizButton');
+        const mainHorrorQuizResultArea = document.getElementById('mainHorrorQuizResultArea');
+        const quizQuestionContainer = document.getElementById('horrorQuizQuestionContainer'); // Get the container
+
+        // Open the modal when the main quiz button is clicked
+        mainHorrorQuizButton.addEventListener('click', function() {
+            mainHorrorQuizModal.style.display = 'block';
+            document.body.classList.add('main-horror-quiz-modal-active');
+            // You could add logic here to dynamically load questions if needed,
+            // or reset the quiz state.
+            mainHorrorQuizResultArea.style.display = 'none'; // Hide previous results
+            mainHorrorQuizResultArea.textContent = '';
+        });
+
+        // Function to close the main horror quiz modal
+        const closeMainHorrorQuiz = function() {
+            mainHorrorQuizModal.style.display = 'none';
+            document.body.classList.remove('main-horror-quiz-modal-active');
+        }
+
+        // Event listener for the close button (X)
+        if (closeMainHorrorQuizButton) {
+            closeMainHorrorQuizButton.addEventListener('click', closeMainHorrorQuiz);
+        }
+
+        // Event listener to close modal if user clicks on the background overlay
+        mainHorrorQuizModal.addEventListener('click', function(event) {
+            if (event.target === mainHorrorQuizModal) {
+                closeMainHorrorQuiz();
+            }
+        });
+
+        // Event listener to close modal with the Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && mainHorrorQuizModal.style.display === 'block') {
+                closeMainHorrorQuiz();
+            }
+        });
+
+        // --- Basic Quiz Submission Logic ---
+        // This is a placeholder. You'll need to define your questions and correct answers.
+        const horrorQuizData = [
+            { questionId: "1", correctAnswer: "c" },
+            { questionId: "2", correctAnswer: "b" },
+            {questionId: "3", correctAnswer:"d"},
+            {questionId: "4", correctAnswer: "a"}
+            // Add more question objects here with their correct answers
+        ];
+
+        if (submitMainHorrorQuizBtn) {
+            submitMainHorrorQuizBtn.addEventListener('click', function() {
+                let score = 0;
+                let totalQuestions = horrorQuizData.length;
+
+                horrorQuizData.forEach(qData => {
+                    const selectedAnswer = document.querySelector(`input[name="q${qData.questionId}_answer"]:checked`);
+                    if (selectedAnswer && selectedAnswer.value === qData.correctAnswer) {
+                        score++;
+                    }
+                });
+
+                mainHorrorQuizResultArea.innerHTML = `<h3>Your Score:</h3><p>${score} out of ${totalQuestions} correct!</p>`;
+                if (score === totalQuestions) {
+                    mainHorrorQuizResultArea.innerHTML += "<p>Fantastic! You're a true horror aficionado!</p>";
+                } else if (score >= totalQuestions / 2) {
+                    mainHorrorQuizResultArea.innerHTML += "<p>Well done! You know your horror.</p>";
+                } else {
+                    mainHorrorQuizResultArea.innerHTML += "<p>Good effort! Keep exploring the museum to sharpen your knowledge.</p>";
+                }
+                mainHorrorQuizResultArea.style.display = 'block';
+            });
+        }
+
+        // Optional: Style selected radio button labels for better UX
+        if (quizQuestionContainer) {
+            quizQuestionContainer.addEventListener('change', function(event) {
+                if (event.target.type === 'radio') {
+                    // Remove 'selected' class from all labels in the same question group
+                    const groupName = event.target.name;
+                    document.querySelectorAll(`input[name="${groupName}"]`).forEach(radio => {
+                        radio.parentElement.classList.remove('selected-answer');
+                        radio.parentElement.style.borderLeftColor = 'transparent'; // Reset border
+                    });
+                    // Add 'selected' class to the parent label of the checked radio
+                    event.target.parentElement.classList.add('selected-answer');
+                    event.target.parentElement.style.borderLeftColor = '#d40000'; // Highlight border
+                }
+            });
+        }
+    } // End of check for mainQuizButton && mainHorrorQuizModal
+
 
 // --- SCRIPT TO CLEAR QUIZ-RELATED LOCALSTORAGE ON PAGE UNLOAD ---
 window.addEventListener('beforeunload', function (e) {

@@ -912,3 +912,241 @@ p {
 body.image-modal-active {
     overflow: hidden;
 }
+
+/* Main Horror Quiz Button on index.html */
+.main-horror-quiz-button {
+    display: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #8b0000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+.main-horror-quiz-button:hover {
+    background-color: #6a0000; /* Darker red on hover */
+    transform: translateY(-2px);
+}
+
+/* Main Horror Knowledge Quiz Modal */
+.main-horror-quiz-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 3000; /* Ensure it's on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Allow modal content to scroll if it's too long */
+    background-color: rgba(0, 0, 0, 0.92); /* Slightly more opaque dark background */
+    animation: fadeInMainQuizModal 0.4s ease-out;
+}
+
+@keyframes fadeInMainQuizModal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.main-horror-quiz-modal-content {
+    background-color: #282828; /* Dark charcoal background */
+    color: #e0e0e0; /* Light grey text for readability */
+    margin: 4% auto; /* More top/bottom margin */
+    padding: 30px;
+    border: 1px solid #444;
+    width: 90%;
+    max-width: 750px; /* Slightly wider */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    position: relative;
+    animation: scaleInMainQuizModal 0.4s ease-out;
+}
+
+@keyframes scaleInMainQuizModal {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.main-horror-quiz-modal-close {
+    color: #bbb;
+    position: absolute; /* Position relative to modal-content */
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.main-horror-quiz-modal-close:hover,
+.main-horror-quiz-modal-close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-horror-quiz-modal-content h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #d40000; /* Brighter theme red for heading */
+    font-size: 1.8em;
+    border-bottom: 1px solid #555;
+    padding-bottom: 15px;
+}
+
+.horror-quiz-item {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #555;
+}
+.horror-quiz-item:last-of-type { /* Use last-of-type for more reliability */
+    border-bottom: none;
+    margin-bottom: 20px; /* Adjust margin for last item if needed */
+}
+
+.horror-quiz-question-text {
+    font-size: 1.25em; /* Slightly larger question text */
+    margin-bottom: 18px;
+    font-weight: 600; /* Semi-bold */
+    color: #f5f5f5;
+}
+
+.horror-quiz-3d-object-container {
+    width: 100%; /* Takes full width available in the quiz item */
+    /* REMOVE fixed height and min-height to let content determine the size */
+    /* height: 350px; -- REMOVE THIS */
+    /* min-height: 250px; -- REMOVE THIS (or keep if you want a min placeholder size before content loads) */
+
+    background-color: #1c1c1c; /* Your existing background color */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    padding: 15px; /* Add some padding AROUND the Sketchfab embed for spacing */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+
+    /* REMOVE display:flex and related centering if the content below will handle its own layout/centering */
+    /* display: flex; -- REMOVE */
+    /* align-items: center; -- REMOVE */
+    /* justify-content: center; -- REMOVE */
+    /* overflow: hidden; -- Can be removed if content scales correctly, or kept if preferred */
+}
+
+/*
+  The user will paste the entire Sketchfab block like this into the container:
+  <div class="horror-quiz-3d-object-container">
+      <div class="sketchfab-embed-wrapper">
+          <iframe ... width="640" height="480" ...></iframe>
+          <p>...</p>
+      </div>
+  </div>
+*/
+
+/* Style Sketchfab's wrapper div (optional, but can help center it if it's not full width) */
+.horror-quiz-3d-object-container .sketchfab-embed-wrapper {
+    margin: 0 auto; /* Centers the Sketchfab block if its max-width is less than container width */
+    max-width: 640px; /* Optional: Cap the width at the iframe's original intended width.
+                         The iframe inside will then be 100% of this (up to 640px).
+                         Remove this if you want the iframe to always be 100% of .horror-quiz-3d-object-container */
+}
+
+/* Make the Sketchfab iframe responsive and maintain its aspect ratio */
+.horror-quiz-3d-object-container .sketchfab-embed-wrapper iframe {
+    display: block; /* Removes potential extra space below the iframe */
+    width: 100%;    /* Make iframe take full width of its parent (.sketchfab-embed-wrapper) */
+    height: auto;   /* Let height be determined by the aspect-ratio property */
+    aspect-ratio: 640 / 480; /* Explicitly set aspect ratio based on iframe's attributes (640x480 is 4:3) */
+    border: none;   /* Remove any default iframe border */
+}
+
+/* Style the Sketchfab attribution paragraph for better visibility */
+.horror-quiz-3d-object-container .sketchfab-embed-wrapper p {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 10px 0 0 0; /* Add some space above the paragraph */
+    padding: 5px;
+    color: #b0b0b0; /* Lighter color for better readability on dark background */
+    text-align: center;
+    line-height: 1.4;
+    background-color: rgba(0,0,0,0.2); /* Optional: slight background for the text */
+    border-radius: 4px; /* Optional: rounded corners for the text background */
+}
+
+.horror-quiz-3d-object-container .sketchfab-embed-wrapper p a {
+    font-weight: bold;
+    color: #1CAAD9; /* Sketchfab's link color */
+    text-decoration: none;
+}
+
+.horror-quiz-3d-object-container .sketchfab-embed-wrapper p a:hover {
+    text-decoration: underline;
+}
+.horror-quiz-3d-object-container iframe { /* Basic styling for iframes you embed */
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove iframe borders */
+}
+.horror-quiz-3d-object-container p { /* Style for the placeholder text */
+    color: #777;
+}
+
+
+.horror-quiz-answer-options label {
+    display: block;
+    background-color: #383838;
+    color: #ddd;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 4px solid transparent; /* For selection indication */
+    cursor: pointer;
+    transition: background-color 0.2s, border-left-color 0.2s;
+}
+.horror-quiz-answer-options label:hover {
+    background-color: #484848;
+}
+.horror-quiz-answer-options input[type="radio"] {
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.horror-quiz-answer-options input[type="radio"]:checked + label { /* This won't work directly, JS needed to style selected label */
+    /* background-color: #d40000; */ /* Indication of selection, better done with JS changing a class */
+    /* border-left-color: #ffc107; */
+}
+
+
+.submit-main-horror-quiz {
+    display: block;
+    width: 60%;
+    padding: 14px;
+    margin: 40px auto 15px auto;
+    background-color: #d40000; /* Theme red */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.15em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.submit-main-horror-quiz:hover {
+    background-color: #a00000; /* Darker red */
+    transform: translateY(-1px);
+}
+
+.main-horror-quiz-result-area {
+    margin-top: 25px;
+    padding: 18px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Class to lock body scroll when this modal is open */
+body.main-horror-quiz-modal-active {
+    overflow: hidden;
+}
